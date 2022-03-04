@@ -445,7 +445,7 @@ blockCRS($_SESSION['user'], 'login');
 		-->
 		<div class="restaurants"
 			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10", "initialIndex": 2 }'>
-			<a href="business-details.html" class="restaurant">
+			<a href="business-details" class="restaurant">
 				<div class="details">
 					<div class="image">
 						<img src="assets/images/restaurants/kfc.png" height="120px" alt="KFC">

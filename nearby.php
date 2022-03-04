@@ -43,27 +43,27 @@
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
 		<div class="menu-links">
-			<a href="discover.html" class="link link-secondary">
+			<a href="discover" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby.html" class="link link-secondary active">
+			<a href="nearby" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders.html" class="link link-secondary">
+			<a href="orders" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites.html" class="link link-secondary">
+			<a href="favourites" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
 				<span>Favourites</span>
 			</a>
 
-			<a href="profile.html" class="link link-secondary">
+			<a href="profile" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -93,11 +93,11 @@
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
 			-->
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 
@@ -123,11 +123,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -151,11 +151,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -179,11 +179,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -207,11 +207,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -235,11 +235,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -263,11 +263,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -291,11 +291,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -326,11 +326,11 @@
 		<div class="businesses constrain">
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -354,11 +354,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -382,11 +382,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -410,11 +410,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -438,11 +438,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -466,11 +466,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -494,11 +494,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -522,11 +522,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -557,11 +557,11 @@
 		<div class="businesses constrain">
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -585,11 +585,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -613,11 +613,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -641,11 +641,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -669,11 +669,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -697,11 +697,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -725,11 +725,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -753,11 +753,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -788,11 +788,11 @@
 		<div class="businesses constrain">
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -816,11 +816,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -844,11 +844,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -872,11 +872,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -900,11 +900,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -928,11 +928,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -956,11 +956,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -984,11 +984,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1019,11 +1019,11 @@
 		<div class="businesses constrain">
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1047,11 +1047,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1075,11 +1075,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1103,11 +1103,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1131,11 +1131,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1159,11 +1159,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1187,11 +1187,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1215,11 +1215,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1250,11 +1250,11 @@
 		<div class="businesses constrain">
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1278,11 +1278,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1306,11 +1306,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1334,11 +1334,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1362,11 +1362,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1390,11 +1390,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1418,11 +1418,11 @@
 			</div>
 
 			<div class="business">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">
@@ -1446,11 +1446,11 @@
 			</div>
 
 			<div class="business bookmarked">
-				<a href="business-details.html" class="image">
+				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
 				</a>
 				<div class="details">
-					<a href="business-details.html" class="name">
+					<a href="business-details" class="name">
 						<h5>Kichi Coffee</h5>
 					</a>
 					<button class="btn bookmark">

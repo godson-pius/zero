@@ -7,7 +7,7 @@ There were some pages I didn't include an ID for, they weren't needed and the bo
 
 # Section IDs
 Every section has a Unique ID. The ID is used to style everything inside the section.
-There were some cases I had to use Class instead (pages like "business-details.html") because those pages contain Tabs (Having 2 or more pages in one page but the pages are in Tabs).
+There were some cases I had to use Class instead (pages like "business-details") because those pages contain Tabs (Having 2 or more pages in one page but the pages are in Tabs).
 
 # .h-grid & .v-grid Classes
 h-grid adds a horizontal grid wherever it is used.

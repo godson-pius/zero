@@ -21,11 +21,11 @@
 	<section id="search" class="header-primary">
 		<div class="header">
 			<div class="search-box constrain">
-				<form id="search-form" action="search-results.html" method="get" class="input-with-icon">
+				<form id="search-form" action="search-results" method="get" class="input-with-icon">
 					<input type="search" id="search-input" placeholder="What are you searching for?" value="Shawarma">
 					<button type="submit" class="btn"><img class="svg" src="assets/images/icons/search.svg" height="10px" alt="Search"></button>
 				</form>
-				<a href="discover.html" class="btn close-search">
+				<a href="discover" class="btn close-search">
 					<img class="svg" src="assets/images/icons/filter.svg" height="15px" alt="Filter">
 					<p>Exit</p>
 				</a>
@@ -36,27 +36,27 @@
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
 		<div class="menu-links">
-			<a href="discover.html" class="link link-secondary active">
+			<a href="discover" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby.html" class="link link-secondary">
+			<a href="nearby" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders.html" class="link link-secondary">
+			<a href="orders" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites.html" class="link link-secondary">
+			<a href="favourites" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
 				<span>Favourites</span>
 			</a>
 
-			<a href="profile.html" class="link link-secondary">
+			<a href="profile" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>

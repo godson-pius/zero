@@ -19,7 +19,7 @@
 <body id="rating-page" class="container bg-offwhite">
 	<section id="header" class="constrain header-white">
 		<div class="header-actions">
-			<a href="profile.html" class="back link">
+			<a href="profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 		</div>
@@ -28,7 +28,7 @@
 	</section>
 
 	<section id="rating">
-		<form action="rating.html">
+		<form action="rating">
 			<div class="rating restaurant constrain">
 				<h5 class="rating-type">Restaurant</h5>
 				<div class="rating-info">
