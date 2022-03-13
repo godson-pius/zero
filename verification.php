@@ -20,7 +20,7 @@
 
     <section id="header" class="constrain">
         <div class="navigation">
-            <a href="forgot-password.html" class="back">
+            <a href="forgot-password" class="back">
                 <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
             </a>
         </div>
@@ -32,7 +32,7 @@
     </section>
 
     <section id="verification-form" class="constrain">
-        <form action="reset-password.html" class="otp" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+        <form action="reset-password" class="otp" data-group-name="digits" data-autosubmit="false" autocomplete="off">
             <div class="form-row">
                 <input type="text" id="digit-1" name="digit-1" data-next="digit-2"/>
                 <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1"/>

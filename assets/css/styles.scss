@@ -34,7 +34,7 @@ body {
 	color: #8f9bb3;
 	margin: 0;
 	min-height: 100vh;
-	overflow-x: hidden;
+	overflow-x: auto;
 
 	@media (max-height: 700px) {
 		font-size: small;
@@ -335,7 +335,7 @@ textarea {
 	-webkit-appearance: none;
 	appearance: none;
 	color: #222b45;
-	transition: all 0.2s linear ;
+	transition: all 0.2s linear;
 
 	&:focus,
 	&:active {
@@ -751,7 +751,8 @@ form {
 			background-color: transparent;
 			padding-right: 0;
 
-			&:focus, &:active {
+			&:focus,
+			&:active {
 				box-shadow: none;
 				border: 0;
 			}
@@ -989,9 +990,14 @@ form {
 #onboardings {
 	background: #ffffff;
 	border-radius: 0px 0px 30px 30px;
+	padding: 100px 30px 50px 30px;
 	min-height: 75vh;
 	display: grid;
 	// overflow: hidden;
+
+	@media (max-height: 700px) {
+		padding: 50px 15px 30px 15px;
+	}
 
 	.onboarding {
 		display: grid;
@@ -1002,11 +1008,9 @@ form {
 		grid-auto-flow: row;
 		width: 100%;
 		height: 100%;
-		padding: 100px 30px 50px 30px;
 
 		@media (max-height: 700px) {
 			grid-gap: 10px;
-			padding: 50px 15px 30px 15px;
 		}
 
 		.dots {
@@ -1065,18 +1069,6 @@ form {
 
 .flickity-slider {
 	transition: none 0s ease 0s !important;
-}
-
-.swiper-wrapper {
-	transition-timing-function: ease !important;
-	max-width: 100vw;
-	z-index: auto !important;
-}
-
-.swiper-container {
-	width: 100%;
-	height: 100%;
-	z-index: auto !important;
 }
 
 .flickity-image-support {
@@ -1525,7 +1517,8 @@ form {
 				// transition: 0.1s all ease-in-out 0.1s;
 				// transform: none;
 
-				.search-history, .suggestions {
+				.search-history,
+				.suggestions {
 					transform: translateY(0px);
 				}
 			}
@@ -1541,8 +1534,7 @@ form {
 		.advert {
 			text-align: center;
 			padding: 15px 7.5px;
-			width: 300px;
-			
+
 			&:first-child {
 				padding-left: 15px;
 			}
@@ -1576,7 +1568,7 @@ form {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -1645,15 +1637,14 @@ form {
 		.order {
 			display: grid;
 			text-align: left;
-			padding: 15px 0px;
-			width: 120px;
+			padding: 15px 7.5px;
 
 			&:first-child {
-				margin-left: 15px;
+				padding-left: 15px;
 			}
 
 			&:last-child {
-				margin-right: 15px;
+				padding-right: 15px;
 			}
 
 			&:active {
@@ -1775,7 +1766,6 @@ form {
 			text-align: left;
 			text-decoration: none;
 			padding: 15px 7.5px;
-			width: 120px;
 
 			&:first-child {
 				padding-left: 15px;
@@ -1812,7 +1802,7 @@ form {
 						height: 100%;
 						object-fit: cover;
 					}
-					
+
 					.bookmark {
 						position: absolute;
 						top: 0px;
@@ -3212,7 +3202,7 @@ form {
 						font-family: Times;
 						font-size: 15px;
 						line-height: 15px;
-						
+
 						&::before {
 							content: '★★★★★';
 							letter-spacing: 2px;
@@ -3340,7 +3330,7 @@ form {
 		// 	position: absolute;
 		// 	z-index: 0;
 		// }
-		
+
 		.popup-content {
 			position: fixed;
 			bottom: 0;
@@ -4874,7 +4864,7 @@ form {
 				box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
 				border-radius: 8px;
 				grid-template-areas: "image details radio";
-				
+
 				.image {
 					display: grid;
 					width: 80px;
@@ -4884,7 +4874,7 @@ form {
 					padding-top: 100%;
 					position: relative;
 					grid-area: image;
-					
+
 					img {
 						width: 40px;
 						height: auto;
@@ -4893,7 +4883,7 @@ form {
 						place-self: center;
 						content: url(" ../images/payments/visa.svg");
 					}
-					
+
 					svg {
 						width: 40px;
 						height: auto;
@@ -4901,6 +4891,7 @@ form {
 						place-self: center;
 					}
 				}
+
 				&.visa {
 					.image {
 						img {
@@ -4916,7 +4907,7 @@ form {
 						}
 					}
 				}
-				
+
 				.details {
 					display: grid;
 					grid-gap: 0px;
@@ -4965,11 +4956,11 @@ form {
 			}
 
 			.select {
-				
+
 				select {
 					padding: 15px 45px 15px 60px;
 				}
-				
+
 				.image {
 					position: absolute;
 					left: 15px;
@@ -4977,7 +4968,7 @@ form {
 					line-height: 0;
 					height: 30px;
 					width: 30px;
-					
+
 					img,
 					svg {
 						height: 100%;
@@ -5792,7 +5783,7 @@ form {
 		z-index: 3;
 		transition: none;
 		min-height: 50%;
-		
+
 		.popup-content {
 			display: block;
 			position: absolute;
@@ -5809,7 +5800,7 @@ form {
 			width: 100%;
 			box-shadow: 0px -3px 15px rgba(98, 107, 149, 0.139724);
 			transition: none;
-	
+
 			.close-popup {
 				width: 100%;
 				border-radius: 10px 10px 0px 0px;
@@ -5820,27 +5811,27 @@ form {
 				position: sticky;
 				top: 0;
 				z-index: 1;
-	
+
 				&:active {
 					background-color: #edf1f6;
 				}
-	
+
 				img,
 				svg {
 					height: 8px;
 					transform: scaleY(-1);
-	
+
 					path {
 						fill: #C5CEE0;
 					}
 				}
 			}
-			
+
 			.tracking-details {
 				display: grid;
 				grid-auto-flow: row;
 				grid-gap: 0;
-				
+
 				.title {
 					font-size: 15px;
 					line-height: 20px;
@@ -5893,6 +5884,7 @@ form {
 
 						.name {
 							grid-area: name;
+
 							h5 {
 								line-height: 20px;
 							}
@@ -6403,7 +6395,7 @@ form {
 				}
 			}
 		}
-		
+
 		.text {
 			display: grid;
 			grid-auto-flow: column;
@@ -6438,7 +6430,7 @@ form {
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
 			grid-gap: 10px;
-			
+
 			.link {
 				justify-self: right;
 			}
@@ -6453,13 +6445,13 @@ form {
 			border: 1px solid #eaeaea;
 			grid-template-columns: auto 1fr;
 			align-items: center;
-			
+
 			.map {
-				    width: 100px;
-				    height: 100px;
-				    overflow: hidden;
-				    position: relative;
-				    border-radius: 4px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+				position: relative;
+				border-radius: 4px;
 
 				img {
 					width: 100%;
@@ -6467,7 +6459,7 @@ form {
 					object-fit: cover;
 				}
 			}
-			
+
 			.details {
 				display: grid;
 				grid-gap: 10px;
@@ -6600,7 +6592,7 @@ form {
 				p {
 					color: #222B45;
 				}
-				
+
 				p:nth-child(2) {
 					justify-self: end;
 					font-weight: 600;
@@ -6611,7 +6603,7 @@ form {
 				display: grid;
 				grid-gap: 10px;
 				grid-auto-flow: column;
-				
+
 				h4 {
 					color: #FA6400;
 				}
@@ -6824,7 +6816,7 @@ form {
 		// grid-gap: 15px;
 		// grid-auto-flow: row;
 		padding: 15px 0 0 0;
-		
+
 		.header {
 			display: grid;
 			grid-template-columns: 1fr auto;
@@ -6884,7 +6876,7 @@ form {
 					&:active {
 						transform: scale(0.95);
 					}
-					
+
 					.card-image {
 						display: grid;
 						width: 60px;
@@ -6910,13 +6902,13 @@ form {
 							position: absolute;
 							place-self: center;
 						}
-						
+
 						&.visa {
 							img {
 								content: url(" ../images/payments/visa.svg");
 							}
 						}
-		
+
 						&.mastercard {
 							img {
 								content: url(" ../images/payments/mastercard.svg");
@@ -7243,7 +7235,7 @@ form {
 			resize: none;
 		}
 	}
-	
+
 	.submit {
 		display: grid;
 		grid-gap: 15px;

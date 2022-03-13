@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 
     <section id="header" class="constrain">
         <div class="navigation">
-            <a href="login.html" class="back">
+            <a href="login" class="back">
                 <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
             </a>
         </div>

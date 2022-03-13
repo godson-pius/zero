@@ -16,9 +16,9 @@ blockCRS($_SESSION['user'], 'login');
 
 	<!-- Stylesheets -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 	<link rel="stylesheet" href="assets/css/styles.css" />
 	<link rel="stylesheet" href="assets/css/flickity.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 	<title>Discover</title>
 </head>
@@ -186,39 +186,38 @@ blockCRS($_SESSION['user'], 'login');
 		</div>
 	</section>
 
-	<section id="discover-adverts" class="constrain swiper-container">
-		<div class="swiper-wrapper">
-			<div class="advert swiper-slide">
-				<a href="#" class="details">
-					<div class="image">
-						<img src="assets/images/banner/banner1.png" height="100px" alt="Advert">
-					</div>
-					<!-- the .flickity-image-support class is the hack we're using to make the slide images appear at full width. It's hidden with css. Just the image above shows. -->
-					<div class="flickity-image-support">
-						<h5>Advert</h5>
-					</div>
-				</a>
-			</div>
-			<div class="advert swiper-slide">
-				<a href="#" class="details">
-					<div class="image">
-						<img src="assets/images/banner/banner2.png" height="100px" alt="Advert">
-					</div>
-					<div class="flickity-image-support">
-						<h5>Advert</h5>
-					</div>
-				</a>
-			</div>
-			<div class="advert swiper-slide">
-				<a href="#" class="details">
-					<div class="image">
-						<img src="assets/images/banner/banner1.png" height="100px" alt="Advert">
-					</div>
-					<div class="flickity-image-support">
-						<h5>Advert</h5>
-					</div>
-				</a>
-			</div>
+	<section id="discover-adverts" class="constrain"
+		data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10" }'>
+		<div class="advert">
+			<a href="#" class="details">
+				<div class="image">
+					<img src="assets/images/banner/banner1.png" height="100px" alt="Advert">
+				</div>
+				<!-- the .flickity-image-support class is the hack we're using to make the slide images appear at full width. It's hidden with css. Just the image above shows. -->
+				<div class="flickity-image-support">
+					<h5>Advert</h5>
+				</div>
+			</a>
+		</div>
+		<div class="advert">
+			<a href="#" class="details">
+				<div class="image">
+					<img src="assets/images/banner/banner2.png" height="100px" alt="Advert">
+				</div>
+				<div class="flickity-image-support">
+					<h5>Advert</h5>
+				</div>
+			</a>
+		</div>
+		<div class="advert">
+			<a href="#" class="details">
+				<div class="image">
+					<img src="assets/images/banner/banner1.png" height="100px" alt="Advert">
+				</div>
+				<div class="flickity-image-support">
+					<h5>Advert</h5>
+				</div>
+			</a>
 		</div>
 	</section>
 
@@ -316,120 +315,119 @@ blockCRS($_SESSION['user'], 'login');
 			</a>
 		</div>
 
-		<div class="orders swiper-container">
+		<div class="orders"
+			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10", "initialIndex": 2 }'>
 			<!-- 
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
 			-->
-			<div class="swiper-wrapper">
-				<a href="#" class="order swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Fried Noodles</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Fried Noodles</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="#" class="order swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-							<!-- Bookmark icon -->
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Peach Tea Spoon</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
+						<!-- Bookmark icon -->
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Peach Tea Spoon</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="#" class="order swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Steamed Askamaya</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Steamed Askamaya</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="#" class="order swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Fried Noodles</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Fried Noodles</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="#" class="order swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Peach Tea Spoon</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Peach Tea Spoon</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="#" class="order swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Steamed Askamaya</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-								<span>Seafoods & Fries</span>
-							</p>
-						</div>
+			<a href="#" class="order bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
-			</div>
+					<div class="text">
+						<h5>Steamed Askamaya</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
+							<span>Seafoods & Fries</span>
+						</p>
+					</div>
+				</div>
+			</a>
 		</div>
 	</section>
 
@@ -445,118 +443,117 @@ blockCRS($_SESSION['user'], 'login');
 		<!-- 
 			There's a ".bookmarked" class on the restaurants that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the restaurant logo.
 		-->
-		<div class="restaurants swiper-container">
-			<div class="swiper-wrapper">
-				<a href="business-details" class="restaurant swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/kfc.png" height="120px" alt="KFC">
+		<div class="restaurants"
+			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10", "initialIndex": 2 }'>
+			<a href="business-details" class="restaurant">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/kfc.png" height="120px" alt="KFC">
 
-							<!-- Bookmark icon -->
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>KFC</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>76A Gwarimpa Estate, Abuja</span>
-							</p>
-						</div>
+						<!-- Bookmark icon -->
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>KFC</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>76A Gwarimpa Estate, Abuja</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="business-details" class="restaurant swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/cold-stone.png" height="120px" alt="KFC">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Cold Stone Creamery</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>230 Frederic Picnic Road</span>
-							</p>
-						</div>
+			<a href="business-details" class="restaurant bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/cold-stone.png" height="120px" alt="KFC">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Cold Stone Creamery</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>230 Frederic Picnic Road</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="business-details" class="restaurant swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/lion-square.png" height="120px" altKFCaya">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Lion Square</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>8573 Torp Lake Estate, Abuja</span>
-							</p>
-						</div>
+			<a href="business-details" class="restaurant">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/lion-square.png" height="120px" altKFCaya">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Lion Square</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>8573 Torp Lake Estate, Abuja</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="business-details" class="restaurant swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/kfc.png" height="120px" alt="KFC">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>KFC</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>76A Gwarimpa Estate, Abuja</span>
-							</p>
-						</div>
+			<a href="business-details" class="restaurant bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/kfc.png" height="120px" alt="KFC">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>KFC</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>76A Gwarimpa Estate, Abuja</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="business-details" class="restaurant swiper-slide">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/cold-stone.png" height="120px" alt="KFC">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Cold Stone Creamery</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>230 Frederic Picnic Road</span>
-							</p>
-						</div>
+			<a href="business-details" class="restaurant">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/cold-stone.png" height="120px" alt="KFC">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
+					<div class="text">
+						<h5>Cold Stone Creamery</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>230 Frederic Picnic Road</span>
+						</p>
+					</div>
+				</div>
+			</a>
 
-				<a href="business-details" class="restaurant swiper-slide bookmarked">
-					<div class="details">
-						<div class="image">
-							<img src="assets/images/restaurants/lion-square.png" height="120px" altKFCaya">
-							<button class="btn bookmark">
-								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-							</button>
-						</div>
-						<div class="text">
-							<h5>Lion Square</h5>
-							<p>
-								<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
-								<span>8573 Torp Lake Estate, Abuja</span>
-							</p>
-						</div>
+			<a href="business-details" class="restaurant bookmarked">
+				<div class="details">
+					<div class="image">
+						<img src="assets/images/restaurants/lion-square.png" height="120px" altKFCaya">
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 					</div>
-				</a>
-			</div>
+					<div class="text">
+						<h5>Lion Square</h5>
+						<p>
+							<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
+							<span>8573 Torp Lake Estate, Abuja</span>
+						</p>
+					</div>
+				</div>
+			</a>
 		</div>
 	</section>
 
@@ -869,56 +866,12 @@ blockCRS($_SESSION['user'], 'login');
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script> -->
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 	<script src="assets/js/popper.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/flickity.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/smooth-scroll.js"></script>
-
-	<script>
-		var swiper = new Swiper('#orders .orders', {
-			spaceBetween: 15,
-			slidesPerView: 'auto',
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: true,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-
-		var swiper = new Swiper('#restaurants .restaurants', {
-			spaceBetween: 15,
-			slidesPerView: 'auto',
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: true,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-
-		var swiper = new Swiper('#discover-adverts', {
-			spaceBetween: 15,
-			slidesPerView: 'auto',
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: true,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
-	</script>
 </body>
 
 </html>

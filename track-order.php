@@ -19,7 +19,7 @@
 <body id="track-order-page" class="container bg-offwhite">
 	<section id="header" class="header-white">
 		<div class="header-actions constrain">
-			<a href="address.html" class="back link">
+			<a href="address" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 
@@ -154,7 +154,7 @@
 			</div>
 
 			<div class="rider-rated constrain">
-				<a href="address.html" class="back link">
+				<a href="address" class="back link">
 					<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 				</a>
 				<div class="text">

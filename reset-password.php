@@ -20,7 +20,7 @@
 
     <section id="header" class="constrain">
         <div class="navigation">
-            <a href="verification.html" class="back">
+            <a href="verification" class="back">
                 <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
             </a>
         </div>
@@ -32,7 +32,7 @@
     </section>
 
     <section id="reset-password-form" class="constrain">
-        <form action="login.html">
+        <form action="login">
             <div class="form-row">
                 <div>
                     <input type="password" placeholder="New Password" name="password">

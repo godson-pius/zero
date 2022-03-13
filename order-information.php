@@ -22,7 +22,7 @@
 	<!-- Wrapping everything in a form so it can be submitted to the database. -->
 	<form action="">
 		<section id="header" class="constrain header-white">
-			<a href="edit-profile.html" class="back link">
+			<a href="edit-profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 

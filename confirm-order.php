@@ -20,9 +20,9 @@
 
 <body id="confirm-order-page" class="container">
 	<!-- Wrapping everything in a form so it can be submitted to the database. -->
-	<form action="order-information.html">
+	<form action="order-information">
 		<section id="header" class="constrain header-white">
-			<a href="edit-profile.html" class="back link">
+			<a href="edit-profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 
@@ -315,7 +315,7 @@
 		<section id="payment-method" class="constrain">
 			<div class="header">
 				<h5>Payment Method</h5>
-				<a href="payment-methods.html" class="link link-primary">Add payment method</a>
+				<a href="payment-methods" class="link link-primary">Add payment method</a>
 			</div>
 
 			<div class="cards">

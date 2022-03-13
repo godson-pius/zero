@@ -29,27 +29,27 @@
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
 		<div class="menu-links">
-			<a href="discover.html" class="link link-secondary">
+			<a href="discover" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby.html" class="link link-secondary">
+			<a href="nearby" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders.html" class="link link-secondary active">
+			<a href="orders" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites.html" class="link link-secondary">
+			<a href="favourites" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
 				<span>Favourites</span>
 			</a>
 
-			<a href="profile.html" class="link link-secondary">
+			<a href="profile" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -73,7 +73,7 @@
 	<section id="ongoing" class="tab-content active empty">
 		<div class="orders constrain">
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -90,7 +90,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -106,7 +106,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -122,7 +122,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -138,7 +138,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -164,7 +164,7 @@
 				<p>You can go to Discover to add products.</p>
 			</div>
 
-			<a href="discover.html" class="btn btn-primary">Go Discover</a>
+			<a href="discover" class="btn btn-primary">Go Discover</a>
 		</div>
 	</section>
 
@@ -173,7 +173,7 @@
 	<section id="history" class="tab-content">
 		<div class="orders constrain">
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -186,7 +186,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kfc.png" height="95px" alt="kichi">
 				</div>
@@ -199,7 +199,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -212,7 +212,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kfc.png" height="95px" alt="kichi">
 				</div>
@@ -225,7 +225,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -238,7 +238,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kfc.png" height="95px" alt="kichi">
 				</div>
@@ -260,7 +260,7 @@
 				<p>You can go to Discover to add products.</p>
 			</div>
 
-			<a href="discover.html" class="btn btn-primary">Go Discover</a>
+			<a href="discover" class="btn btn-primary">Go Discover</a>
 		</div>
 	</section>
 
@@ -269,7 +269,7 @@
 	<section id="draft" class="tab-content">
 		<div class="orders constrain">
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -285,7 +285,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -301,7 +301,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -317,7 +317,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -333,7 +333,7 @@
 				</div>
 			</a>
 
-			<a href="track-order.html" class="order">
+			<a href="track-order" class="order">
 				<div class="image">
 					<img src="assets/images/restaurants/kichi.png" height="95px" alt="kichi">
 				</div>
@@ -358,7 +358,7 @@
 				<p>You can go to Discover to add products.</p>
 			</div>
 
-			<a href="discover.html" class="btn btn-primary">Go Discover</a>
+			<a href="discover" class="btn btn-primary">Go Discover</a>
 		</div>
 	</section>
 
