@@ -29,7 +29,7 @@
 	
 	<!-- So this <section id="header"> has a backgroud image, I don't know if it's meant to be dynamic but I've left a link to the image in the inline style of the section.  -->
 	<section id="header" class="constrain header-transparent-image"
-		style="background: linear-gradient(0deg, rgba(34, 43, 69, 0.7), rgba(34, 43, 69, 0.7)), url(assets/images/banner/banner2.png);">
+		style="background: linear-gradient(0deg, rgba(34, 43, 69, 0.7), rgba(34, 43, 69, 0.7)), url(assets/images/restaurants/lion-square.png);">
 
 		
 		<div class="header-actions">
@@ -47,7 +47,7 @@
 
 		<!-- This shows the name and address of the restaurant -->
 		<div class="text">
-			<h1 class="name">Kichi Coffee & Drink</h1>
+			<h1 class="name">Lion Square</h1>
 			<p class="address">
 				<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
 				<span>76A Gwarimpa Estate, Abuja</span>
@@ -122,15 +122,15 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/1.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Hot Salami Pizza</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$2.99</span>
 
 								<!-- Clicking the button below brings up the Add to Cart popup. -->
 								<button class="btn add-to-cart">
@@ -144,15 +144,15 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/2.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Dungeness Crab Arancini</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$3.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -164,15 +164,15 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/3.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Octopus</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$4.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -184,15 +184,15 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/4.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Roasted Beet Salad</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$6.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -204,15 +204,15 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/5.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Fried Cauliflower</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$3.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -224,15 +224,15 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/6.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Carbonara Pizza</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$5.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -244,15 +244,15 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/1.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 							<button class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
 						</a>
 						<div class="text">
-							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<a href="#" class="name">Margherita Pizza</a>
 							<p>
-								<span class="price">$1,500</span>
+								<span class="price">$3.99</span>
 								<button class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -274,13 +274,13 @@
 			<div class="v-grid">
 				<div class="product constrain">
 					<a href="#" class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Lemon Juice Fresh">
+						<img src="assets/images/products/3.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 					</a>
 
 					<div class="details">
 
 						<a href="#" class="name">
-							<h5>Lemon Juice Fresh</h5>
+							<h5>Margherita Burrata</h5>
 						</a>
 
 						<button class="btn bookmark">
@@ -298,13 +298,13 @@
 
 				<div class="product constrain bookmarked">
 					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Lemon Juice Fresh">
+						<img src="assets/images/products/4.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 					</a>
 
 					<div class="details">
 
 						<a href="#" class="name">
-							<h5>Lemon Juice Fresh</h5>
+							<h5>Burrata Pizza</h5>
 						</a>
 
 						<button class="btn bookmark">
@@ -330,13 +330,13 @@
 			<div class="v-grid">
 				<div class="product constrain bookmarked">
 					<a href="#" class="image">
-						<img src="assets/images/products/9.png" height="120px" alt="Black Sugar Coffee">
+						<img src="assets/images/products/9.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 					</a>
 
 					<div class="details">
 
 						<a href="#" class="name">
-							<h5>Black Sugar Coffee</h5>
+							<h5>Squid Ink Risotto</h5>
 						</a>
 
 						<button class="btn bookmark">
@@ -354,13 +354,13 @@
 
 				<div class="product constrain">
 					<a href="#" class="image">
-						<img src="assets/images/products/8.png" height="120px" alt="Black Sugar Coffee">
+						<img src="assets/images/products/8.jpg" height="120px" alt="Fried Noodles and Chicken Wings">
 					</a>
 
 					<div class="details">
 
 						<a href="#" class="name">
-							<h5>Black Sugar Coffee</h5>
+							<h5>Funghi Misti Pizza</h5>
 						</a>
 
 						<button class="btn bookmark">
@@ -394,11 +394,11 @@
 		
 		<!-- These are the photos from ratings. -->
 		<div class="review-media">
-			<a href="#" class="media"><img src="assets/images/products/14.png" height="70px" alt="Review Media"></a>
-			<a href="#" class="media"><img src="assets/images/products/15.png" height="70px" alt="Review Media"></a>
-			<a href="#" class="media"><img src="assets/images/products/16.png" height="70px" alt="Review Media"></a>
-			<a href="#" class="media"><img src="assets/images/products/17.png" height="70px" alt="Review Media"></a>
-			<a href="#" class="media"><img src="assets/images/products/18.png" height="70px" alt="Review Media"></a>
+			<a href="#" class="media"><img src="assets/images/products/14.jpg" height="70px" alt="Review Media"></a>
+			<a href="#" class="media"><img src="assets/images/products/15.jpg" height="70px" alt="Review Media"></a>
+			<a href="#" class="media"><img src="assets/images/products/16.jpg" height="70px" alt="Review Media"></a>
+			<a href="#" class="media"><img src="assets/images/products/17.jpg" height="70px" alt="Review Media"></a>
+			<a href="#" class="media"><img src="assets/images/products/18.jpg" height="70px" alt="Review Media"></a>
 		</div>
 
 		<!-- Star Ratings -->
@@ -494,9 +494,9 @@
 					<p class="date">Yesterday</p>
 					<p class="note">Matcha milk tea very yummy! I like it. Matcha milk tea very yummy! I like it. Matcha milk tea very yummy! I like it.</p>
 					<div class="comment-media">
-						<a href="#" class="media"><img src="assets/images/products/16.png" height="70px" alt="Review Media"></a>
-						<a href="#" class="media"><img src="assets/images/products/15.png" height="70px" alt="Review Media"></a>
-						<a href="#" class="media"><img src="assets/images/products/14.png" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/16.jpg" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/15.jpg" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/14.jpg" height="70px" alt="Review Media"></a>
 					</div>
 				</div>
 			</div>
@@ -524,9 +524,9 @@
 					<div class="stars" style="--rating: 4;" aria-label="Rating of this product is 4 out of 5."></div>
 					<p class="date">Yesterday</p>
 					<div class="comment-media">
-						<a href="#" class="media"><img src="assets/images/products/16.png" height="70px" alt="Review Media"></a>
-						<a href="#" class="media"><img src="assets/images/products/15.png" height="70px" alt="Review Media"></a>
-						<a href="#" class="media"><img src="assets/images/products/14.png" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/16.jpg" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/15.jpg" height="70px" alt="Review Media"></a>
+						<a href="#" class="media"><img src="assets/images/products/14.jpg" height="70px" alt="Review Media"></a>
 					</div>
 				</div>
 			</div>

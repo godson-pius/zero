@@ -17,15 +17,14 @@
 </head>
 
 <body id="payment-methods-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="header-actions">
+	<section id="header" class="header-primary">
+		<div class="header-actions constrain">
 			<a href="profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
-			<button class="link edit">Edit</button>
 		</div>
 
-		<h1>Payment Methods</h1>
+		<h1 class="constrain">Payment Methods</h1>
 	</section>
 
 	<section id="payment-methods">

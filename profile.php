@@ -31,12 +31,12 @@ if (isset($user_profile)) {
 </head>
 
 <body id="profile-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="text">
+	<section id="header" class="header-primary">
+		<div class="text constrain">
 			<h1 class="name">Profile</h1>
 		</div>
 
-		<a href="edit-profile" class="user-details">
+		<a href="edit-profile" class="user-details constrain">
 			<div class="image">
 				<img src="assets/images/humans/1.png" height="70px" alt="Fried Noodles">
 			</div>

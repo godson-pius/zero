@@ -21,8 +21,8 @@
  -->
 
 <body id="cart-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="text">
+	<section id="header" class="header-primary">
+		<div class="text constrain">
 			<h1 class="name">Cart</h1>
 		</div>
 	</section>
@@ -30,11 +30,11 @@
 	<section id="cart">
 		<div class="cart-item constrain">
 			<a href="#" class="image">
-				<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+				<img src="assets/images/products/21.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 			</a>
 			<div class="details">
-				<a href="#" class="name">Lemon Juice Fresh</a>
-				<h5 class="price">$450</h5>
+				<a href="#" class="name">Hot Salami Pizza</a>
+				<h5 class="price">$7.99</h5>
 				<div class="quantity">
 					<button type="button" class="minus btn"><img class="svg icon" alt="" src="assets/images/icons/minus.svg" height="30px"></button>
 					<span class="value">0</span>
@@ -45,11 +45,11 @@
 
 		<div class="cart-item constrain">
 			<a href="#" class="image">
-				<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+				<img src="assets/images/products/22.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 			</a>
 			<div class="details">
-				<a href="#" class="name">Lemon Juice Fresh</a>
-				<h5 class="price">$450</h5>
+				<a href="#" class="name">Dungeness Crab Arancini</a>
+				<h5 class="price">$8.99</h5>
 				<div class="quantity">
 					<button type="button" class="minus btn"><img class="svg icon" alt="" src="assets/images/icons/minus.svg" height="30px"></button>
 					<span class="value">0</span>
@@ -60,11 +60,11 @@
 
 		<div class="cart-item constrain">
 			<a href="#" class="image">
-				<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+				<img src="assets/images/products/23.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 			</a>
 			<div class="details">
-				<a href="#" class="name">Lemon Juice Fresh</a>
-				<h5 class="price">$450</h5>
+				<a href="#" class="name">Octopus</a>
+				<h5 class="price">$9.99</h5>
 				<div class="quantity">
 					<button type="button" class="minus btn"><img class="svg icon" alt="" src="assets/images/icons/minus.svg" height="30px"></button>
 					<span class="value">0</span>
@@ -97,20 +97,23 @@
 			<h4>Similar Products</h4>
 		</div>
 
-		<div class="products constrain"
-			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "0", "LazyLoad": false }'>
+		<div class="products"
+			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10", "initialIndex": 2 }'>
+			<!-- 
+				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
+			-->
 			<div class="product bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/24.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Hot Salami Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$2.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -122,15 +125,15 @@
 			<div class="product">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/25.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Dungeness Crab Arancini</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -142,35 +145,15 @@
 			<div class="product bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/26.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Octopus</a>
 						<p>
-							<span class="price">$1,500</span>
-							<button type="button" class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-							</button>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="product bookmarked">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button type="button" class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$4.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -182,35 +165,15 @@
 			<div class="product">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/27.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Roasted Beet Salad</a>
 						<p>
-							<span class="price">$1,500</span>
-							<button type="button" class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-							</button>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="product">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button type="button" class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$6.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -222,15 +185,35 @@
 			<div class="product bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/28.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Fried Cauliflower</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="product">
+				<div class="details">
+					<a href="#" class="image">
+						<img src="assets/images/products/29.jpg" height="120px" alt="Fried Noodles and Chicken">
+						<button type="button" class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
+					</a>
+					<div class="text">
+						<a href="#" class="name">Carbonara Pizza</a>
+						<p>
+							<span class="price">$5.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>

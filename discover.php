@@ -106,48 +106,48 @@ require_once 'admin/config/db.php';
 					data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "10" }'>
 					<div class="slide">
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/5.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/5.jpg" height="100px" alt="Product Results">
 							<p class="name">Asia Food</p>
 						</a>
 
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/3.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/3.jpg" height="100px" alt="Product Results">
 							<p class="name">Fast Food</p>
 						</a>
 					</div>
 
 					<div class="slide">
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/4.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/4.jpg" height="100px" alt="Product Results">
 							<p class="name">Asia Food</p>
 						</a>
 
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/6.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/6.jpg" height="100px" alt="Product Results">
 							<p class="name">Fast Food</p>
 						</a>
 					</div>
 
 					<div class="slide">
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/4.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/4.jpg" height="100px" alt="Product Results">
 							<p class="name">Asia Food</p>
 						</a>
 
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/6.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/6.jpg" height="100px" alt="Product Results">
 							<p class="name">Fast Food</p>
 						</a>
 					</div>
 
 					<div class="slide">
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/4.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/4.jpg" height="100px" alt="Product Results">
 							<p class="name">Asia Food</p>
 						</a>
 
 						<a href="#" class="product">
-							<img class="image" src="assets/images/products/6.png" height="100px" alt="Product Results">
+							<img class="image" src="assets/images/products/6.jpg" height="100px" alt="Product Results">
 							<p class="name">Fast Food</p>
 						</a>
 					</div>
@@ -322,15 +322,15 @@ require_once 'admin/config/db.php';
 			<div class="order bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/6.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Hot Salami Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$2.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -342,15 +342,15 @@ require_once 'admin/config/db.php';
 			<div class="order">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/1.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Dungeness Crab Arancini</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -362,15 +362,15 @@ require_once 'admin/config/db.php';
 			<div class="order bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/2.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Octopus</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$4.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -382,15 +382,15 @@ require_once 'admin/config/db.php';
 			<div class="order">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/3.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Roasted Beet Salad</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$6.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -402,15 +402,15 @@ require_once 'admin/config/db.php';
 			<div class="order bookmarked">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/6.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Fried Cauliflower</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -422,15 +422,15 @@ require_once 'admin/config/db.php';
 			<div class="order">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/4.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Carbonara Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$5.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -585,15 +585,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/7.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Margherita Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -605,15 +605,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/8.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Margherita Burrata</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$6.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -625,15 +625,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/9.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Burrata Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$7.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -645,15 +645,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/10.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Squid Ink Risotto</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$9.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -665,15 +665,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/11.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Funghi Misti Pizza</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$4.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -685,15 +685,15 @@ require_once 'admin/config/db.php';
 			<div class="sale">
 				<div class="details">
 					<a href="#" class="image">
-						<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/12.jpg" height="120px" alt="Fried Noodles and Chicken">
 						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
 					</a>
 					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+						<a href="#" class="name">Chicken Parm Pasta</a>
 						<p>
-							<span class="price">$1,500</span>
+							<span class="price">$3.99</span>
 							<button type="button" class="btn add-to-cart">
 								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 							</button>
@@ -756,45 +756,45 @@ require_once 'admin/config/db.php';
 			<div class="products">
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/4.png" height="60px" alt="KFC">
+						<img src="assets/images/products/13.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Aperol Spritz</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$2.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/5.png" height="60px" alt="KFC">
+						<img src="assets/images/products/14.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Walnut Bread Burrata</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$5.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/6.png" height="60px" alt="KFC">
+						<img src="assets/images/products/15.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Arugula and Fennel Salad</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$3.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/2.png" height="60px" alt="KFC">
+						<img src="assets/images/products/16.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Saffron Risotto</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$7.99</b>
 						</p>
 					</div>
 				</a>
@@ -839,45 +839,45 @@ require_once 'admin/config/db.php';
 			<div class="products">
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/1.png" height="60px" alt="KFC">
+						<img src="assets/images/products/17.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Walnut Toast</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$5.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/2.png" height="60px" alt="KFC">
+						<img src="assets/images/products/18.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Mushroom Pizza</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$7.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/6.png" height="60px" alt="KFC">
+						<img src="assets/images/products/19.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Bartenders Pizza</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$8.99</b>
 						</p>
 					</div>
 				</a>
 				<a href="#" class="product">
 					<div class="image">
-						<img src="assets/images/products/3.png" height="60px" alt="KFC">
+						<img src="assets/images/products/20.jpg" height="60px" alt="KFC">
 					</div>
 					<div class="text">
-						<p class="name">Tropical Fruit Juice</p>
+						<p class="name">Broccolini</p>
 						<p class="price">
-							<b>$1,500</b>
+							<b>$9.99</b>
 						</p>
 					</div>
 				</a>

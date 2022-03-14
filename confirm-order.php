@@ -113,7 +113,7 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/1.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -133,7 +133,7 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/2.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -153,7 +153,7 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/3.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -173,7 +173,7 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/4.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -193,7 +193,7 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/5.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -213,7 +213,7 @@
 				<div class="product">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/6.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
@@ -233,7 +233,7 @@
 				<div class="product bookmarked">
 					<div class="details">
 						<a href="#" class="image">
-							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<img src="assets/images/products/1.jpg" height="120px" alt="Fried Noodles Salad and Chicken Wings">
 							<button type="button" class="btn bookmark">
 								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>

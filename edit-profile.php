@@ -17,8 +17,8 @@
 </head>
 
 <body id="edit-profile-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="header-actions">
+	<section id="header" class="header-primary">
+		<div class="header-actions constrain">
 			<a href="profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
@@ -46,7 +46,7 @@
 			<a class="setting">
 				<div class="details">
 					<p class="title">Full Name</p>
-					<h5 class="name">Joy Obianaba</h5>
+					<h5 class="name">Signs Madueke</h5>
 				</div>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
@@ -63,7 +63,7 @@
 			<a class="setting">
 				<div class="details">
 					<p class="title">Phone Number</p>
-					<h5 class="name">+234 (803) 878 2933</h5>
+					<h5 class="name">+234 (907) 151 0046</h5>
 				</div>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
@@ -71,7 +71,7 @@
 			<a class="setting">
 				<div class="details">
 					<p class="title">Email</p>
-					<h5 class="name">joyobianaba@example.com</h5>
+					<h5 class="name">signsmadueke@gmail.com</h5>
 				</div>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
@@ -79,7 +79,7 @@
 			<a class="setting">
 				<div class="details">
 					<p class="title">Date of Birth</p>
-					<h5 class="name">Oct 24, 2000</h5>
+					<h5 class="name">Oct 30, 2000</h5>
 				</div>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>

@@ -19,13 +19,13 @@
 
 <body class="bg-offwhite container with-bottom-menu">
 
-    <section id="header" class="constrain">
-        <div class="navigation">
+    <section id="header" class="header-primary">
+        <div class="navigation constrain">
             <a href="address" class="back">
                 <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
             </a>
         </div>
-        <h1 class="title">Add New Address</h1>
+        <h1 class="title constrain">Add New Address</h1>
     </section>
 
     <section id="add-new-address-form" class="constrain">

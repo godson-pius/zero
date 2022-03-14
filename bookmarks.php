@@ -21,9 +21,19 @@
  -->
 
 <body id="bookmarks-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="text">
+	<section id="header" class="header-primary header-with-tab">
+		<div class="text constrain">
 			<h1 class="name">Bookmarks</h1>
+		</div>
+
+		<!-- 
+			This is the tab buttons.
+			When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
+			I have already implemented it using javascript.
+		-->
+		<div id="tabs" class="constrain">
+			<button class="tab active" onclick="openTab(event, 'foods')"><span>Foods</span></button>
+			<button class="tab" onclick="openTab(event, 'restaurants')"><span>Restaurants</span></button>
 		</div>
 	</section>
 	
@@ -56,16 +66,6 @@
 		</div>
 	</section>
 
-	<!-- 
-		This is the tab buttons.
-		When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
-		I have already implemented it using javascript.
-	-->
-	<section id="tabs" class="constrain">
-		<button class="tab active" onclick="openTab(event, 'foods')"><span>Foods</span></button>
-		<button class="tab" onclick="openTab(event, 'restaurants')"><span>Restaurants</span></button>
-	</section>
-
 	<!-- Tab content -->
 	<!-- This is the Foods tab -->
 	<section id="foods" class="tab-content category active">
@@ -74,7 +74,7 @@
 			<!-- Because this is the Favorites page, all products are bookmarked. So no work has to be done for the bookmark icon. It's already styled from the .favorite class. -->
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -101,7 +101,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -128,7 +128,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -155,7 +155,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -182,7 +182,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -209,7 +209,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -236,7 +236,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">
@@ -263,7 +263,7 @@
 
 			<div class="bookmark">
 				<a href="#" class="image">
-					<img src="assets/images/products/10.png" height="85px" alt="kichi">
+					<img src="assets/images/products/10.jpg" height="85px" alt="kichi">
 				</a>
 				<div class="details">
 					<a href="#" class="name">

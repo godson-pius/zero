@@ -21,22 +21,23 @@
  -->
 
 <body id="nearby-page" class="container with-bottom-menu bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="text">
+	<section id="header" class="header-primary header-with-tab">
+		<div class="text constrain">
 			<h1 class="name">Nearby</h1>
 		</div>
-		<!-- This select is used to change the location of the user so he sees Nearby Restaurants. -->
-		<div class="select">
-			<div class="icon">
-				<img class="svg" src="assets/images/icons/map-pointer.svg" height="15px" alt="Map Pointer">
-			</div>
-			<select name="location" id="location">
-				<option value="Uwani">Uwani</option>
-				<option value="Nsukka">Nsukka</option>
-			</select>
-			<div class="chevron-icon">
-				<img class="svg" src="assets/images/icons/chevron-down.svg" height="7px" alt="Select">
-			</div>
+
+		<!-- 
+			This is the tab buttons.
+			When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
+			I have already implemented it using javascript.
+		-->
+		<div id="tabs" class="constrain">
+			<button class="tab active" onclick="openTab(event, 'food')"><span>Food</span></button>
+			<button class="tab" onclick="openTab(event, 'drinks')"><span>Drinks</span></button>
+			<button class="tab" onclick="openTab(event, 'cakes')"><span>Cakes</span></button>
+			<button class="tab" onclick="openTab(event, 'rice')"><span>Rice</span></button>
+			<button class="tab" onclick="openTab(event, 'coffee')"><span>Coffee</span></button>
+			<button class="tab" onclick="openTab(event, 'fries')"><span>Fries</span></button>
 		</div>
 	</section>
 
@@ -67,20 +68,6 @@
 				<span>Profile</span>
 			</a>
 		</div>
-	</section>
-
-	<!-- 
-		This is the tab buttons.
-		When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
-		I have already implemented it using javascript.
-	-->
-	<section id="tabs" class="constrain">
-		<button class="tab active" onclick="openTab(event, 'food')"><span>Food</span></button>
-		<button class="tab" onclick="openTab(event, 'drinks')"><span>Drinks</span></button>
-		<button class="tab" onclick="openTab(event, 'cakes')"><span>Cakes</span></button>
-		<button class="tab" onclick="openTab(event, 'rice')"><span>Rice</span></button>
-		<button class="tab" onclick="openTab(event, 'coffee')"><span>Coffee</span></button>
-		<button class="tab" onclick="openTab(event, 'fries')"><span>Fries</span></button>
 	</section>
 
 	<!-- Tab content -->

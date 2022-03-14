@@ -67,7 +67,7 @@
 				<div class="rating-info">
 					<div class="food">
 						<a href="#" class="image">
-							<img src="assets/images/products/12.png" height="100px" alt="Restaurant Image">
+							<img src="assets/images/products/12.jpg" height="100px" alt="Restaurant Image">
 						</a>
 						<a href="#">
 							<h5 class="name">Fried Yam Chips</h5>
