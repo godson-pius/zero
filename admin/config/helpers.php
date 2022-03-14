@@ -67,12 +67,12 @@ function checkCartDuplicate($table, $data, $incoming_data, $data2, $incoming_dat
 
 function encrypt($data) {
     $data = sha1(md5($data));
-    return $data . "zero";
+    return $data . "fudhunt";
 }
 
 function decrypt($oldData, $newData) {
     $newData = sha1(md5($newData));
-    $newData = $newData . "zero";
+    $newData = $newData . "fudhunt";
 
     if ($newData != $oldData) {
         return false;
