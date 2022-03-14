@@ -28,11 +28,11 @@
 <body id="business-details-page" class="bg-offwhite container with-bottom-menu bookmarked">
 	
 	<!-- So this <section id="header"> has a backgroud image, I don't know if it's meant to be dynamic but I've left a link to the image in the inline style of the section.  -->
-	<section id="header" class="constrain header-transparent-image"
-		style="background: linear-gradient(0deg, rgba(34, 43, 69, 0.7), rgba(34, 43, 69, 0.7)), url(assets/images/restaurants/lion-square.png);">
+	<section id="header" class="header-transparent-image header-with-tab"
+		style="background: linear-gradient(0deg, rgba(34, 43, 69, 0.7), rgba(34, 43, 69, 0.7)), url(assets/images/products/1.jpg);">
 
 		
-		<div class="header-actions">
+		<div class="header-actions constrain">
 			<a href="discover" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
@@ -40,13 +40,10 @@
 			<button type="button" class="btn bookmark">
 				<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 			</button>
-			<button type="button" class="link options">
-				<img class="svg" src="assets/images/icons/options.svg" width="18px" alt="Bookmark">
-			</button>
 		</div>
 
 		<!-- This shows the name and address of the restaurant -->
-		<div class="text">
+		<div class="text constrain">
 			<h1 class="name">Lion Square</h1>
 			<p class="address">
 				<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
@@ -57,6 +54,17 @@
 				<b>4.5</b>
 				<span>(1256 Reviews)</span>
 			</p>
+		</div>
+
+		<!-- 
+			This is the tab buttons.
+			When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
+			I have already implemented it using javascript.
+		-->
+		<div id="tabs" class="constrain">
+			<button class="tab active" onclick="openTab(event, 'products')"><span>Menu</span></button>
+			<button class="tab" onclick="openTab(event, 'reviews')"><span>Reviews</span></button>
+			<button class="tab" onclick="openTab(event, 'information')"><span>Information</span></button>
 		</div>
 	</section>
 
@@ -87,17 +95,6 @@
 				<span>Profile</span>
 			</a>
 		</div>
-	</section>
-
-	<!-- 
-		This is the tab buttons.
-		When you click the buttons they activate the selected tab, clicking it also adds a ".active" class to both the button of the tab and the tab content.
-		I have already implemented it using javascript.
-	-->
-	<section id="tabs" class="constrain">
-		<button class="tab active" onclick="openTab(event, 'products')"><span>Menu</span></button>
-		<button class="tab" onclick="openTab(event, 'reviews')"><span>Reviews</span></button>
-		<button class="tab" onclick="openTab(event, 'information')"><span>Information</span></button>
 	</section>
 
 	<!-- Tab content -->

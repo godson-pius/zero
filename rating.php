@@ -17,20 +17,20 @@
 </head>
 
 <body id="rating-page" class="container bg-offwhite">
-	<section id="header" class="constrain header-white">
-		<div class="header-actions">
-			<a href="profile" class="back link">
+<section id="header" class="header-primary">
+		<div class="header-actions constrain">
+			<a href="discover" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 		</div>
 
-		<h1>Rating</h2>
+		<h1 class="constrain">Rating</h1>
 	</section>
 
 	<section id="rating">
-		<form action="rating">
+		<form action="discover">
 			<div class="rating restaurant constrain">
-				<h5 class="rating-type">Restaurant</h5>
+				<h4 class="rating-type">Restaurant</h4>
 				<div class="rating-info">
 					<!-- 
 						There's a ".bookmarked" class on the restaurants that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon.
@@ -41,7 +41,7 @@
 						</a>
 						<div class="details">
 							<a href="#">
-								<h5 class="name">Lion Square</h5>
+								<h4 class="name">Lion Square</h4>
 							</a>
 							<!-- Bookmark icon -->
 							<button class="btn bookmark">
@@ -55,7 +55,7 @@
 					</div>
 
 					<div class="rating-process">
-						<h4>What do you think about this restaurant?</h4>
+						<h5>What do you think about this restaurant?</h5>
 						<p>Your feedback will help us improve restaurants experience better.</p>
 						<textarea name="review" placeholder="Leave a review" id="note"></textarea>
 					</div>
@@ -63,14 +63,14 @@
 			</div>
 
 			<div class="rating food constrain">
-				<h5 class="rating-type">Food</h5>
+				<h4 class="rating-type">Food</h4>
 				<div class="rating-info">
 					<div class="food">
 						<a href="#" class="image">
 							<img src="assets/images/products/12.jpg" height="100px" alt="Restaurant Image">
 						</a>
 						<a href="#">
-							<h5 class="name">Fried Yam Chips</h5>
+							<h4 class="name">Fried Yam Chips</h4>
 						</a>
 						<div class="reaction">
 							<!-- This is the thumbs up and down radio -->

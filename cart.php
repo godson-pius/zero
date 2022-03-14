@@ -78,15 +78,15 @@
 		<div class="constrain">
 			<div class="h-grid">
 				<p>Subtotal</p>
-				<p>$700.00</p>
+				<p>$26.97</p>
 			</div>
 			<div class="h-grid">
 				<p>Shipping Fee</p>
-				<p>$850.00</p>
+				<p>$7.00</p>
 			</div>
 			<div class="totals">
 				<h4>Total</h4>
-				<h4>$1,550.00</h4>
+				<h4>$33.97</h4>
 			</div>
 		</div>
 	</section>
@@ -226,9 +226,9 @@
 
 	<section id="big-cart-btn">
 		<!-- This button submits this form. -->
-		<button type="submit" class="big-cart-btn btn btn-primary constrain">
+		<a href="confirm-order" class="big-cart-btn btn btn-primary constrain">
 			Checkout
-		</button>
+		</a>
 	</section>
 	
 	<!-- This is that menu at the bottom of every page -->

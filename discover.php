@@ -582,7 +582,7 @@ require_once 'admin/config/db.php';
 			<!-- 
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
 			-->
-			<div class="sale">
+			<div class="sale bookmarked">
 				<div class="details">
 					<a href="#" class="image">
 						<img src="assets/images/products/7.jpg" height="120px" alt="Fried Noodles and Chicken">
@@ -622,7 +622,7 @@ require_once 'admin/config/db.php';
 				</div>
 			</div>
 
-			<div class="sale">
+			<div class="sale bookmarked">
 				<div class="details">
 					<a href="#" class="image">
 						<img src="assets/images/products/9.jpg" height="120px" alt="Fried Noodles and Chicken">
@@ -642,7 +642,7 @@ require_once 'admin/config/db.php';
 				</div>
 			</div>
 
-			<div class="sale">
+			<div class="sale bookmarked">
 				<div class="details">
 					<a href="#" class="image">
 						<img src="assets/images/products/10.jpg" height="120px" alt="Fried Noodles and Chicken">
@@ -682,7 +682,7 @@ require_once 'admin/config/db.php';
 				</div>
 			</div>
 
-			<div class="sale">
+			<div class="sale bookmarked">
 				<div class="details">
 					<a href="#" class="image">
 						<img src="assets/images/products/12.jpg" height="120px" alt="Fried Noodles and Chicken">
@@ -748,7 +748,7 @@ require_once 'admin/config/db.php';
 						<p class="time">30 Min <span>•</span> 0.4 Km</p>
 					</div>
 					<div class="third-row">
-						<div class="tag tag-outline">Free Shipping</div>
+						<div class="tag">Free Shipping</div>
 					</div>
 				</div>
 			</div>
@@ -831,7 +831,7 @@ require_once 'admin/config/db.php';
 						<p class="time">30 Min <span>•</span> 0.4 Km</p>
 					</div>
 					<div class="third-row">
-						<div class="tag tag-outline">Free Shipping</div>
+						<div class="tag">Free Shipping</div>
 					</div>
 				</div>
 			</div>

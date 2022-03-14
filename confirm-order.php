@@ -38,8 +38,8 @@
 		<!-- Delivery address -->
 		<section id="delivery-address" class="constrain">
 			<div class="header">
-				<h5>Delivery to</h5>
-				<a href="#" class="link link-primary">Add new address</a>
+				<h4>Deliver to</h4>
+				<a href="add-new-address" class="link link-primary">Add new address</a>
 			</div>
 
 			<div class="address">
@@ -73,32 +73,53 @@
 						<p>Oct 6, 2020</p>
 					</div>
 				</div>
-				<a href="#" class="link link-primary">Edit</a>
 			</div>
 
-			<div class="cart-item constrain">
-				<div class="image">
-					<img src="assets/images/restaurants/lion-square.png" height="100px" alt="Restaurant Image">
+			<div class="cart-items constrain">
+				<div class="cart-item">
+					<div class="image">
+						<img src="assets/images/products/21.jpg" height="100px" alt="Restaurant Image">
+					</div>
+					<div class="details">
+						<h5 class="name">Hot Salami Pizza</h5>
+						<p class="product">$7.99</p>
+					</div>
 				</div>
-				<div class="details">
-					<h5 class="name">Lion Square</h5>
-					<p class="product">Lemon Fresh Juice</p>
+
+				<div class="cart-item">
+					<div class="image">
+						<img src="assets/images/products/22.jpg" height="100px" alt="Restaurant Image">
+					</div>
+					<div class="details">
+						<h5 class="name">Dungeness Crab Arancini</h4>
+						<p class="product">$8.99</p>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<div class="image">
+						<img src="assets/images/products/23.jpg" height="100px" alt="Restaurant Image">
+					</div>
+					<div class="details">
+						<h5 class="name">Octopus</h5>
+						<p class="product">$9.99</p>
+					</div>
 				</div>
 			</div>
-
-			<div class="cart-totals constrain">
-				<div class="h-grid">
-					<p>Subtotal</p>
-					<p>$700.00</p>
-				</div>
-				<div class="h-grid">
-					<p>Shipping Fee (2.4 Km)</p>
-					<p>$850.00</p>
-				</div>
-				<div class="totals">
-					<h4>Total</h4>
-					<h4>$1550.00</h4>
-				</div>
+		</section>
+		
+		<section id="cart-totals" class="constrain">
+			<div class="h-grid">
+				<p>Subtotal</p>
+				<p>$26.97</p>
+			</div>
+			<div class="h-grid">
+				<p>Shipping Fee</p>
+				<p>$7.00</p>
+			</div>
+			<div class="totals">
+				<h4>Total</h4>
+				<h4>$33.97</h4>
 			</div>
 		</section>
 
@@ -252,59 +273,10 @@
 			</div>
 		</section>
 
-		<!-- Select Voucher -->
-		<section id="add-voucher">
-			<div class="section-title constrain">
-				<h4>Add Voucher</h4>
-			</div>
-
-			<div class="vouchers constrain">
-				<div class="voucher">
-					<a href="#">
-						<div class="image">
-							<img src="assets/images/vouchers/v1.svg" height="70px" alt="Voucher">
-						</div>
-					</a>
-				</div>
-
-				<div class="voucher">
-					<a href="#">
-						<div class="image">
-							<img src="assets/images/vouchers/v2.svg" height="70px" alt="Voucher">
-						</div>
-					</a>
-				</div>
-
-				<div class="voucher">
-					<a href="#">
-						<div class="image">
-							<img src="assets/images/vouchers/v1.svg" height="70px" alt="Voucher">
-						</div>
-					</a>
-				</div>
-
-				<div class="voucher">
-					<a href="#">
-						<div class="image">
-							<img src="assets/images/vouchers/v2.svg" height="70px" alt="Voucher">
-						</div>
-					</a>
-				</div>
-
-				<div class="voucher">
-					<a href="#">
-						<div class="image">
-							<img src="assets/images/vouchers/add-voucher.svg" height="70px" alt="Add Voucher">
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-
 		<!-- Leaving a Note -->
 		<section id="note">
 			<div class="title constrain">
-				<h5>Note</h5>
+				<h4>Note</h4>
 			</div>
 
 			<div class="constrain">
@@ -314,7 +286,7 @@
 
 		<section id="payment-method" class="constrain">
 			<div class="header">
-				<h5>Payment Method</h5>
+				<h4>Payment Method</h4>
 				<a href="payment-methods" class="link link-primary">Add payment method</a>
 			</div>
 
@@ -366,7 +338,9 @@
 		</section>
 
 		<div class="submit constrain">
-			<button type="submit" class="btn btn-primary" name="confirm">Confirm</button>
+			<a href="order-information" class="big-cart-btn btn btn-primary constrain">
+				Pay $33.97
+			</a>
 		</div>
 	</form>
 

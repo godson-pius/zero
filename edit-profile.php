@@ -24,6 +24,10 @@
 			</a>
 			<button class="link save">Save</button>
 		</div>
+
+		<div class="text constrain">
+			<h1 class="name">Edit Profile</h1>
+		</div>
 	</section>
 
 	<section id="display-picture" class="constrain">

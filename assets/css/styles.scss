@@ -727,6 +727,7 @@ input[type="password"] {
 	display: inline-block;
 	font-weight: 500;
 	font-size: 7px;
+	letter-spacing: 0.5px;
 	line-height: 7px;
 	padding: 4px 6px 4px 6px;
 	text-transform: uppercase;
@@ -1008,6 +1009,36 @@ form {
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		padding: 50px 15px 30px 15px;
+
+		#tabs {
+			width: 100%;
+			overflow-x: auto;
+			display: grid;
+			grid-auto-flow: column;
+			background-color: transparent;
+			padding: 0;
+
+			.tab {
+				border-bottom: 3px solid transparent;
+
+				span {
+					padding: 15px 25px;
+					display: block;
+					color: #ffffff;
+					opacity: 0.7;
+				}
+
+				&.active {
+					border-bottom-color: #ffffff;
+
+					span {
+						font-weight: 500;
+						color: #ffffff;
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 
 	&.header-white {
@@ -2130,7 +2161,7 @@ form {
 							text-overflow: ellipsis;
 							white-space: nowrap;
 							line-height: 1.3;
-							font-size: 12px;
+							font-size: 13px;
 						}
 
 						img,
@@ -2366,7 +2397,7 @@ form {
 
 							p {
 								line-height: 1.3;
-								font-size: 12px;
+								font-size: 13px;
 								display: grid;
 								grid-auto-flow: column;
 								grid-gap: 5px;
@@ -2384,7 +2415,7 @@ form {
 								}
 
 								span {
-									font-size: 12px;
+									font-size: 13px;
 									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
@@ -2450,7 +2481,7 @@ form {
 							}
 
 							b {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #222b45;
 							}
@@ -2510,7 +2541,7 @@ form {
 
 						.name {
 							color: #222b45;
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							margin-bottom: 0;
 							overflow: hidden;
@@ -2522,7 +2553,7 @@ form {
 
 						.price {
 							color: #fa6400;
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							margin-bottom: 0;
 							overflow: hidden;
@@ -2564,7 +2595,7 @@ form {
 			padding-bottom: 30px;
 			grid-gap: 30px;
 			background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
-			background-size: 600% 600% 600%;
+			background-size: 600% 600%;
 			animation: bg-primary-animation 4s linear infinite;
 			// grid-template-rows: max-content max-content;
 			transition: none;
@@ -2621,7 +2652,7 @@ form {
 
 	.number-of-results {
 		font-weight: 500;
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 1.3;
 		color: #8f9bb3;
 
@@ -2704,7 +2735,7 @@ form {
 
 							p {
 								line-height: 1.3;
-								font-size: 12px;
+								font-size: 13px;
 								display: grid;
 								grid-auto-flow: column;
 								grid-gap: 5px;
@@ -2722,7 +2753,7 @@ form {
 								}
 
 								span {
-									font-size: 12px;
+									font-size: 13px;
 									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
@@ -2780,7 +2811,7 @@ form {
 							}
 
 							span {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #222b45;
 								overflow: hidden;
@@ -2789,7 +2820,7 @@ form {
 							}
 
 							b {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #222b45;
 							}
@@ -2826,12 +2857,17 @@ form {
 // BUSINESS DETAILS PAGE
 #business-details-page {
 	#header {
+		padding: 0;
+		padding-top: 50px;
+		grid-gap: 30px;
+
 		.header-actions {
 			display: grid;
 			grid-gap: 15px;
 			grid-auto-flow: column;
 			align-items: center;
-			grid-template-columns: 1fr auto auto;
+			grid-template-columns: 1fr auto;
+			padding: 0 15px;
 
 			.back {
 				padding: 5px 5px 5px 0;
@@ -2861,26 +2897,13 @@ form {
 					}
 				}
 			}
-
-			.options {
-				padding: 13px 5px;
-				line-height: 0;
-
-				img,
-				svg {
-					width: 18px;
-
-					path {
-						fill: #ffffff;
-					}
-				}
-			}
 		}
 
 		.text {
 			display: grid;
 			grid-gap: 15px;
 			grid-auto-flow: row;
+			padding: 0 15px;
 
 			.name {
 				// overflow: hidden;
@@ -2892,7 +2915,7 @@ form {
 
 			.address {
 				line-height: 1.3;
-				font-size: 12px;
+				font-size: 13px;
 				display: grid;
 				grid-auto-flow: column;
 				grid-gap: 5px;
@@ -2910,7 +2933,7 @@ form {
 				}
 
 				span {
-					font-size: 12px;
+					font-size: 13px;
 					line-height: 1.3;
 					color: #ffffff;
 					overflow: hidden;
@@ -2937,7 +2960,7 @@ form {
 				}
 
 				span {
-					font-size: 12px;
+					font-size: 13px;
 					line-height: 1.3;
 					color: #c5cee0;
 					overflow: hidden;
@@ -2946,7 +2969,7 @@ form {
 				}
 
 				b {
-					font-size: 12px;
+					font-size: 13px;
 					line-height: 1.3;
 					color: #ffffff;
 				}
@@ -3255,7 +3278,7 @@ form {
 						}
 
 						span {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
@@ -3503,7 +3526,7 @@ form {
 					}
 
 					.date {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #ACB1C0;
 						// overflow: hidden;
@@ -3766,7 +3789,7 @@ form {
 						}
 
 						span {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
@@ -3880,7 +3903,7 @@ form {
 
 				.items {
 					grid-area: items;
-					font-size: 12px;
+					font-size: 13px;
 					line-height: 1.3;
 					color: #ffffff;
 					text-transform: uppercase;
@@ -4030,7 +4053,7 @@ form {
 
 					.address {
 						line-height: 1.3;
-						font-size: 12px;
+						font-size: 13px;
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 5px;
@@ -4049,7 +4072,7 @@ form {
 						}
 
 						span {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
@@ -4119,7 +4142,7 @@ form {
 							}
 
 							b {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #222b45;
 							}
@@ -4234,7 +4257,7 @@ form {
 					}
 
 					.id {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #222B45;
 						overflow: hidden;
@@ -4248,7 +4271,7 @@ form {
 					}
 
 					.items {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #ACB1C0;
 						overflow: hidden;
@@ -4369,7 +4392,7 @@ form {
 					}
 
 					.items {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #8f9bb3;
 						overflow: hidden;
@@ -4383,7 +4406,7 @@ form {
 					}
 
 					.date {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #ACB1C0;
 						overflow: hidden;
@@ -4484,7 +4507,7 @@ form {
 
 					.address {
 						line-height: 1.3;
-						font-size: 12px;
+						font-size: 13px;
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 5px;
@@ -4502,7 +4525,7 @@ form {
 						}
 
 						span {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
@@ -4512,7 +4535,7 @@ form {
 					}
 
 					.items {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #8f9bb3;
 						overflow: hidden;
@@ -4635,7 +4658,7 @@ form {
 
 					.restaurant-name {
 						line-height: 1.3;
-						font-size: 12px;
+						font-size: 13px;
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 5px;
@@ -4654,7 +4677,7 @@ form {
 						}
 
 						span {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
@@ -4723,7 +4746,7 @@ form {
 							}
 
 							b {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #222b45;
 							}
@@ -4733,7 +4756,7 @@ form {
 							justify-self: right;
 							color: #fa6400;
 							font-weight: 500;
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -4906,9 +4929,9 @@ form {
 // EDIT PROFILE PAGE
 #edit-profile-page {
 	#header {
-		padding: 50px 15px 30px 15px;
+		padding: 50px 15px 15px 15px;
 		display: grid;
-		grid-gap: 30px;
+		grid-gap: 15px;
 		grid-auto-flow: row;
 		align-items: center;
 		background-color: transparent;
@@ -4918,6 +4941,7 @@ form {
 			grid-gap: 15px;
 			grid-auto-flow: column;
 			align-items: center;
+			padding: 0;
 
 			.back {
 				padding: 5px 10px 5px 0;
@@ -4928,7 +4952,7 @@ form {
 					height: 12px;
 
 					path {
-						color: #222B45;
+						fill: #ffffff;
 					}
 				}
 			}
@@ -4938,15 +4962,18 @@ form {
 				font-size: 13px;
 				line-height: 1.3;
 				font-weight: 500;
-				color: #fa6400;
+				color: #ffffff;
 				justify-self: right;
 			}
+		}
+
+		.text {
+			padding: 0;
 		}
 	}
 
 	#display-picture {
-		margin-bottom: 30px;
-		padding: 0 15px;
+		padding: 30px 15px;
 		justify-self: center;
 
 		.image {
@@ -5027,7 +5054,7 @@ form {
 					grid-auto-flow: row;
 
 					.title {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #8F9BB3;
 						overflow: hidden;
@@ -5202,7 +5229,7 @@ form {
 					}
 
 					.date {
-						font-size: 12px;
+						font-size: 13px;
 						line-height: 1.3;
 						color: #8F9BB3;
 						overflow: hidden;
@@ -5499,19 +5526,18 @@ form {
 // RATING PAGE
 #rating-page {
 	#header {
-		padding: 50px 15px 30px 15px;
-		display: grid;
-		grid-gap: 30px;
-		grid-auto-flow: row;
-		align-items: center;
-		background-color: white;
-		border-bottom: 1px solid #edf1f7;
+
+		h1 {
+			color: #ffffff;
+			padding: 0;
+		}
 
 		.header-actions {
 			display: grid;
 			grid-gap: 15px;
 			grid-auto-flow: column;
 			align-items: center;
+			padding: 0;
 
 			.back {
 				padding: 5px 10px 5px 0;
@@ -5522,18 +5548,9 @@ form {
 					height: 12px;
 
 					path {
-						color: #222B45;
+						fill: #ffffff;
 					}
 				}
-			}
-
-			.save {
-				padding: 5px 0px 5px 10px;
-				font-size: 13px;
-				line-height: 1.3;
-				font-weight: 500;
-				color: #fa6400;
-				justify-self: right;
 			}
 		}
 	}
@@ -5550,12 +5567,12 @@ form {
 				grid-gap: 15px;
 				grid-auto-flow: row;
 
-				.rating-type {
-					font-size: 13px;
-					line-height: 1.3;
-					font-weight: 500;
-					color: #ACB1C0;
-				}
+				// .rating-type {
+				// 	font-size: 13px;
+				// 	line-height: 1.3;
+				// 	font-weight: 500;
+				// 	color: #ACB1C0;
+				// }
 
 				.rating-info {
 					background: #ffffff;
@@ -5615,7 +5632,7 @@ form {
 
 							.address {
 								line-height: 1.3;
-								font-size: 12px;
+								font-size: 13px;
 								display: grid;
 								grid-auto-flow: column;
 								grid-gap: 5px;
@@ -5634,7 +5651,7 @@ form {
 								}
 
 								span {
-									font-size: 12px;
+									font-size: 13px;
 									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
@@ -5684,9 +5701,9 @@ form {
 					.rating-process {
 						padding: 10px;
 						display: grid;
-						grid-gap: 10px;
+						grid-gap: 5px;
 						grid-auto-flow: row;
-						text-align: center;
+						text-align: left;
 
 						h5 {
 							font-size: 17px;
@@ -5698,6 +5715,7 @@ form {
 							font-size: 13px;
 							line-height: 1.3;
 							color: #ACB1C0;
+							margin-bottom: 10px;
 						}
 
 						.rating-stars {
@@ -5725,13 +5743,6 @@ form {
 				display: grid;
 				grid-gap: 15px;
 				grid-auto-flow: row;
-
-				.rating-type {
-					font-size: 13px;
-					line-height: 1.3;
-					font-weight: 500;
-					color: #ACB1C0;
-				}
 
 				.rating-info {
 					background: #ffffff;
@@ -5990,7 +6001,7 @@ form {
 						}
 
 						.id {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #222B45;
 							overflow: hidden;
@@ -6004,7 +6015,7 @@ form {
 						}
 
 						.items {
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 							color: #ACB1C0;
 							overflow: hidden;
@@ -6091,7 +6102,7 @@ form {
 							align-items: center;
 							grid-area: reviews;
 							color: #222B45;
-							font-size: 12px;
+							font-size: 13px;
 							line-height: 1.3;
 
 							img,
@@ -6105,7 +6116,7 @@ form {
 							}
 
 							span {
-								font-size: 12px;
+								font-size: 13px;
 								line-height: 1.3;
 								color: #ACB1C0;
 							}
@@ -6421,7 +6432,7 @@ form {
 
 // CONFIRM ORDER PAGE
 #confirm-order-page {
-	padding-bottom: 30px;
+	// padding-bottom: 30px;
 
 	form {
 		display: block;
@@ -6572,13 +6583,12 @@ form {
 		.heading {
 			background-color: #edf1f7;
 			display: grid;
-			grid-template-columns: 1fr auto;
 			align-items: center;
 			padding: 10px 15px;
 			grid-gap: 10px;
 
 			p {
-				font-size: 12px;
+				font-size: 13px;
 				line-height: 1.3;
 			}
 
@@ -6592,76 +6602,82 @@ form {
 			}
 		}
 
-		.cart-item {
+		.cart-items {
 			display: grid;
-			grid-template-columns: auto 1fr;
-			align-items: center;
-			grid-gap: 15px;
+			grid-gap: 10px;
 
-			.image {
+			.cart-item {
 				display: grid;
-				width: 50px;
-				height: 100%;
-				border-radius: 4px;
-				overflow: hidden;
-				padding-top: 100%;
-				position: relative;
+				grid-template-columns: auto 1fr;
+				align-items: center;
+				grid-gap: 15px;
 
-				&:active {
-					transform: scale(0.95);
-				}
-
-				img {
-					width: 100%;
+				.image {
+					display: grid;
+					width: 50px;
 					height: 100%;
-					position: absolute;
-					object-fit: cover;
+					border-radius: 4px;
+					overflow: hidden;
+					padding-top: 100%;
+					position: relative;
+
+					&:active {
+						transform: scale(0.95);
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						object-fit: cover;
+					}
 				}
-			}
 
-			.details {
-				display: grid;
-				grid-auto-flow: row;
-				grid-gap: 8px;
+				.details {
+					display: grid;
+					grid-auto-flow: row;
+					grid-gap: 8px;
 
-				p {
-					color: #ACB1C0;
-					font-size: 13px;
-					line-height: 1.3;
+					p {
+						color: #ACB1C0;
+						font-size: 13px;
+						line-height: 1.3;
+					}
 				}
 			}
 		}
 
-		.cart-totals {
-			display: grid;
-			grid-gap: 15px;
-			grid-auto-flow: row;
-			padding-top: 0;
+	}
 
-			.h-grid {
+	#cart-totals {
+		display: grid;
+		grid-gap: 5px;
+		grid-auto-flow: row;
+		padding-top: 0;
 
-				p {
-					color: #222B45;
-				}
+		.h-grid {
 
-				p:nth-child(2) {
-					justify-self: end;
-					font-weight: 500;
-				}
+			p {
+				color: #222B45;
 			}
 
-			.totals {
-				display: grid;
-				grid-gap: 10px;
-				grid-auto-flow: column;
+			p:nth-child(2) {
+				justify-self: end;
+				font-weight: 500;
+			}
+		}
 
-				h4 {
-					color: #FA6400;
-				}
+		.totals {
+			display: grid;
+			grid-gap: 10px;
+			grid-auto-flow: column;
 
-				h4:nth-child(2) {
-					justify-self: end;
-				}
+			h4 {
+				color: #FA6400;
+			}
+
+			h4:nth-child(2) {
+				justify-self: end;
 			}
 		}
 	}
@@ -6808,50 +6824,6 @@ form {
 		}
 	}
 
-	#add-voucher {
-		display: grid;
-		grid-gap: 0px;
-		padding: 30px 0;
-		grid-auto-flow: row;
-
-		.vouchers {
-			display: grid;
-			grid-gap: 0px;
-			grid-auto-flow: column;
-			grid-auto-columns: max-content;
-			grid-auto-rows: max-content;
-			padding: 15px 0;
-			width: 100%;
-			overflow-x: auto;
-
-			.voucher {
-				padding: 0 7.5px;
-				display: block;
-				margin: 0;
-
-				&:first-child {
-					padding-left: 15px;
-				}
-
-				&:last-child {
-					padding-right: 15px;
-				}
-
-				&:active {
-					transform: scale(0.95);
-				}
-
-				img {
-					width: auto;
-					height: 70px;
-					object-fit: cover;
-					border-radius: 4px;
-					overflow: hidden;
-				}
-			}
-		}
-	}
-
 	#note {
 		.title {
 			background-color: #edf1f7;
@@ -6881,7 +6853,7 @@ form {
 			padding: 0 15px;
 
 			p {
-				font-size: 12px;
+				font-size: 13px;
 				line-height: 1.3;
 			}
 
@@ -7002,8 +6974,18 @@ form {
 	}
 
 	.submit {
-		.btn {
+		padding-top: 30px;
+
+		.big-cart-btn {
+			display: grid;
+			// text-align: center;
 			width: 100%;
+			padding: 25px;
+			font-size: 17px;
+			line-height: 1.3;
+			color: #ffffff;
+			font-weight: 500;
+			justify-items: center;
 		}
 	}
 }
@@ -7181,13 +7163,12 @@ form {
 		.heading {
 			background-color: #edf1f7;
 			display: grid;
-			grid-template-columns: 1fr auto;
 			align-items: center;
 			padding: 10px 15px;
 			grid-gap: 10px;
 
 			p {
-				font-size: 12px;
+				font-size: 13px;
 				line-height: 1.3;
 			}
 
@@ -7201,94 +7182,83 @@ form {
 			}
 		}
 
-		.cart-item {
+		.cart-items {
 			display: grid;
-			grid-template-columns: auto 1fr;
-			align-items: center;
-			grid-gap: 15px;
+			grid-gap: 10px;
 
-			.image {
+			.cart-item {
 				display: grid;
-				width: 50px;
-				height: 100%;
-				border-radius: 4px;
-				overflow: hidden;
-				padding-top: 100%;
-				position: relative;
+				grid-template-columns: auto 1fr;
+				align-items: center;
+				grid-gap: 15px;
 
-				&:active {
-					transform: scale(0.95);
-				}
-
-				img {
-					width: 100%;
+				.image {
+					display: grid;
+					width: 50px;
 					height: 100%;
-					position: absolute;
-					object-fit: cover;
-				}
-			}
+					border-radius: 4px;
+					overflow: hidden;
+					padding-top: 100%;
+					position: relative;
 
-			.details {
-				display: grid;
-				grid-auto-flow: row;
-				grid-gap: 8px;
+					&:active {
+						transform: scale(0.95);
+					}
 
-				p {
-					color: #ACB1C0;
-					font-size: 13px;
-					line-height: 1.3;
-				}
-			}
-		}
-
-		.cart-totals {
-			display: grid;
-			grid-gap: 15px;
-			grid-auto-flow: row;
-			padding-top: 0;
-
-			.h-grid {
-
-				p {
-					color: #222B45;
+					img {
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						object-fit: cover;
+					}
 				}
 
-				p:nth-child(2) {
-					justify-self: end;
-					font-weight: 500;
-				}
-			}
+				.details {
+					display: grid;
+					grid-auto-flow: row;
+					grid-gap: 8px;
 
-			.totals {
-				display: grid;
-				grid-gap: 10px;
-				grid-auto-flow: column;
-
-				h4 {
-					color: #FA6400;
-				}
-
-				h4:nth-child(2) {
-					justify-self: end;
+					p {
+						color: #ACB1C0;
+						font-size: 13px;
+						line-height: 1.3;
+					}
 				}
 			}
 		}
+
 	}
 
-	#note {
-		grid-gap: 0;
+	#cart-totals {
+		display: grid;
+		grid-gap: 5px;
+		grid-auto-flow: row;
+		padding-top: 0;
 
-		.title {
-			background-color: #edf1f7;
-			padding: 10px 15px;
+		.h-grid {
+
+			p {
+				color: #222B45;
+			}
+
+			p:nth-child(2) {
+				justify-self: end;
+				font-weight: 500;
+			}
 		}
 
-		textarea {
-			background-color: #F7F9FC;
-			width: 100%;
-			height: 80px;
-			border-radius: 4px;
-			resize: none;
+		.totals {
+			display: grid;
+			grid-gap: 10px;
+			grid-auto-flow: column;
+
+			h4 {
+				color: #FA6400;
+			}
+
+			h4:nth-child(2) {
+				justify-self: end;
+			}
 		}
 	}
 
@@ -7481,7 +7451,7 @@ form {
 
 		.big-cart-btn {
 			display: grid;
-			// text-align: center;
+			text-align: center;
 			width: 100%;
 			padding: 25px;
 			font-size: 17px;
