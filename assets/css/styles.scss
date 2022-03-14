@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500");
 
 * {
 	box-sizing: border-box !important;
@@ -26,11 +26,12 @@ html {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 13px;
+	line-height: 1.3;
+	letter-spacing: -.3px;
 	color: #8f9bb3;
 	margin: 0;
 	min-height: 100vh;
@@ -52,7 +53,7 @@ img {
 }
 
 button {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -76,11 +77,12 @@ button {
 }
 
 h1 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 1.3;
+	letter-spacing: -1px;
 	color: #222b45;
 	margin: 0;
 
@@ -90,60 +92,65 @@ h1 {
 }
 
 h2 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 25px;
-	line-height: 25px;
+	line-height: 1.3;
+	letter-spacing: -1px;
 	color: #222b45;
 	margin: 0;
 }
 
 h3 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 20px;
-	line-height: 20px;
+	line-height: 1.3;
+	letter-spacing: -1px;
 	color: #222b45;
 	margin: 0;
 }
 
 h4 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 18px;
-	line-height: 18px;
+	line-height: 1.3;
+	letter-spacing: -.5px;
 	color: #222b45;
 	margin: 0;
 }
 
 h5 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 15px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.3;
+	letter-spacing: -.5px;
 	color: #222b45;
 	margin: 0;
 }
 
 h6 {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 13px;
-	line-height: 13px;
+	line-height: 1.3;
+	letter-spacing: -.5px;
 	color: #222b45;
 	margin: 0;
 }
 
 .lined-title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 600;
-	font-size: 15px;
-	line-height: 35px;
+	font-family: "DM Sans", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.3;
 	border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 	padding-bottom: 5px;
 }
@@ -161,11 +168,12 @@ h6 {
 }
 
 p {
-	font-family: "Roboto", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 13px;
+	line-height: 1.5;
+	letter-spacing: -.3px;
 	color: #8f9bb3;
 	margin: 0;
 	// letter-spacing: -0.6px;
@@ -179,9 +187,9 @@ li {
 	text-rendering: geometricPrecision;
 	color: #222222;
 	margin: 0;
-	font-size: 15px;
-	line-height: 35px;
-	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+	font-family: "DM Sans", sans-serif;
 	font-weight: 500;
 }
 
@@ -271,7 +279,7 @@ a {
 
 .constrain {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 500px;
 	width: 100%;
 	padding: 15px;
 }
@@ -287,7 +295,11 @@ body.mobile {
 }
 
 body.with-bottom-menu {
-	padding-bottom: 73px;
+	padding-bottom: 78px;
+
+	.search-sugestions {
+		padding-bottom: 78px;
+	}
 }
 
 .bg-offwhite {
@@ -295,7 +307,51 @@ body.with-bottom-menu {
 }
 
 .bg-primary {
-	background-color: #fa6400;
+	background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+	background-size: 600% 600%;
+	animation: bg-primary-animation 4s linear infinite;
+}
+
+@-webkit-keyframes bg-primary-animation {
+	0% {
+		background-position: 0% 47%
+	}
+
+	50% {
+		background-position: 100% 54%
+	}
+
+	100% {
+		background-position: 0% 47%
+	}
+}
+
+@-moz-keyframes bg-primary-animation {
+	0% {
+		background-position: 0% 47%
+	}
+
+	50% {
+		background-position: 100% 54%
+	}
+
+	100% {
+		background-position: 0% 47%
+	}
+}
+
+@keyframes bg-primary-animation {
+	0% {
+		background-position: 0% 47%
+	}
+
+	50% {
+		background-position: 100% 54%
+	}
+
+	100% {
+		background-position: 0% 47%
+	}
 }
 
 form {
@@ -326,11 +382,12 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
 textarea {
 	padding: 15px;
 	border: 1px solid #edf1f7;
+	background-color: #ffffff;
 	border-radius: 8px;
-	font-size: 15px;
-	font-family: "Roboto", sans-serif;
-	line-height: 15px;
-	font-weight: 500;
+	font-size: 13px;
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.3;
+	font-weight: 400;
 	outline: 0;
 	-webkit-appearance: none;
 	appearance: none;
@@ -339,19 +396,19 @@ textarea {
 
 	&:focus,
 	&:active {
-		border: 1px solid rgba(34, 43, 69, 0.5);
+		border: 1px solid rgba(34, 43, 69, 0.3);
 		box-shadow: 0 0 0 4px #dee7ff;
 	}
 
 	// &[type=password] {
 	// 	letter-spacing: 4px;
 	// 	font-size: 25px;
-	// 	line-height: 25px;
+	// 	line-height: 1.3;
 	// 	padding: 9px 15px;
 
 	// 	&::placeholder {
-	// 		font-size: 15px;
-	// 		line-height: 15px;
+	// 		font-size: 13px;
+	// 		line-height: 1.3;
 	// 		letter-spacing: normal;
 	// 		padding: 0;
 	// 	}
@@ -367,13 +424,27 @@ textarea {
 	}
 }
 
+input[type="password"] {
+	font-size: 30px !important;
+	line-height: 1 !important;
+	letter-spacing: -1.5px !important;
+	padding: 6px 15px !important;
+
+	&::placeholder {
+		font-size: 15px !important;
+		letter-spacing: normal !important;
+		padding: 0px !important;
+		// line-height: 1;
+	}
+}
+
 .select {
 	position: relative;
 
 	select {
 		padding: 15px 45px 15px 15px;
 		text-align: left;
-		line-height: 18px;
+		line-height: 1.3;
 		color: #222b45;
 		cursor: pointer;
 
@@ -431,8 +502,8 @@ textarea {
 }
 
 .checkbox label {
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 13px;
+	line-height: 1.3;
 	color: #222b45;
 	position: absolute;
 	padding-left: 35px;
@@ -448,7 +519,9 @@ textarea {
 .checkbox input:checked~.check {
 	border-color: #fa6400;
 	box-shadow: 0px 0px 0px 15px #fa6400 inset;
-	background-color: #fa6400;
+	background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+	background-size: 600% 600%;
+	animation: bg-primary-animation 4s linear infinite;
 }
 
 .checkbox input:checked~.check::after {
@@ -504,8 +577,8 @@ textarea {
 }
 
 .radio label {
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 13px;
+	line-height: 1.3;
 	color: #222b45;
 	position: absolute;
 	padding-left: 35px;
@@ -521,7 +594,9 @@ textarea {
 .radio input:checked~.check {
 	border-color: #fa6400;
 	box-shadow: 0px 0px 0px 15px #fa6400 inset;
-	background-color: #fa6400;
+	background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+	background-size: 600% 600%;
+	animation: bg-primary-animation 4s linear infinite;
 }
 
 .radio input:checked~.check::after {
@@ -569,7 +644,7 @@ textarea {
 .rating-stars {
 	display: inline-block;
 	position: relative;
-	line-height: 30px;
+	line-height: 1.3;
 	font-size: 30px;
 	justify-self: center;
 }
@@ -640,19 +715,21 @@ textarea {
 
 
 .tag {
-	background-color: #fa6400;
+	background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+	background-size: 600% 600%;
+	animation: bg-primary-animation 4s linear infinite;
 	color: #ffffff;
 	display: inline-block;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 7px;
 	line-height: 7px;
-	padding: 4px 6px 2px 6px;
+	padding: 4px 6px 4px 6px;
 	text-transform: uppercase;
 	border-radius: 3px;
 
 	&.tag-outline {
 		border: 1px solid #fa6400;
-		background-color: transparent;
+		background: transparent;
 		color: #fa6400;
 	}
 }
@@ -679,15 +756,15 @@ textarea {
 }
 
 .btn {
-	padding: 14px 25px;
-	font-family: "Roboto", sans-serif;
+	padding: 17px 25px;
+	font-family: "DM Sans", sans-serif;
 	font-style: normal;
-	font-weight: 600;
-	font-size: 15px;
-	line-height: 15px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.3;
 	outline: 0;
 	border: none;
-	border-radius: 8px;
+	border-radius: 5px;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -725,8 +802,18 @@ textarea {
 	}
 
 	&.btn-primary {
-		background-color: #fa6400;
+		// background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+		background-size: 600% 600%;
+		animation: bg-primary-animation 4s linear infinite;
+		background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+		background-size: 600% 600%;
+		animation: bg-primary-animation 4s linear infinite;
 		color: white;
+	}
+
+	&.btn-secondary {
+		color: #fa6400;
+		background-color: white;
 	}
 
 	&.btn-facebook {
@@ -795,13 +882,13 @@ form {
 			padding: 15px 25px;
 			display: block;
 			color: #8f9bb3;
+			font-weight: 500;
 		}
 
 		&.active {
 			border-bottom-color: #fa6400;
 
 			span {
-				font-weight: 600;
 				color: #222b45;
 			}
 		}
@@ -844,8 +931,72 @@ form {
 		}
 	}
 
+	&.header-with-tab {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: none;
+		grid-gap: 0;
+		padding: 0;
+		align-items: center;
+
+		.text {
+			padding: 50px 15px 15px 15px;
+		}
+	}
+
 	&.header-primary {
-		background-color: #fa6400;
+		background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+		background-size: 600% 600%;
+		animation: bg-primary-animation 4s linear infinite;
+
+		.text {
+			h1 {
+				color: #ffffff;
+			}
+		}
+
+		.navigation {
+
+			.back {
+
+				svg,
+				img {
+					path {
+						fill: #ffffff !important;
+					}
+				}
+			}
+		}
+
+		#tabs {
+			width: 100%;
+			overflow-x: auto;
+			display: grid;
+			grid-auto-flow: column;
+			background-color: transparent;
+			padding: 0;
+
+			.tab {
+				border-bottom: 3px solid transparent;
+
+				span {
+					padding: 15px 25px;
+					display: block;
+					color: #ffffff;
+					opacity: 0.7;
+				}
+
+				&.active {
+					border-bottom-color: #ffffff;
+
+					span {
+						font-weight: 500;
+						color: #ffffff;
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 
 	&.header-transparent-image {
@@ -907,7 +1058,7 @@ form {
 		display: grid;
 		grid-auto-flow: column;
 		margin: 0 auto;
-		max-width: 1000px;
+		padding: 0 !important;
 		width: 100%;
 
 		a {
@@ -918,9 +1069,36 @@ form {
 			text-align: center;
 			place-items: center;
 
+			&[href="cart"] {
+				background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+				background-size: 600% 600%;
+				animation: bg-primary-animation 4s linear infinite;
+				height: max-content;
+				width: max-content;
+				padding: 15px;
+				border-radius: 100px;
+				justify-self: center;
+				align-self: center;
+
+				span {
+					color: #ffffff !important;
+				}
+
+				img,
+				svg {
+					height: 20px;
+					width: 20px;
+
+					path {
+						fill: #ffffff !important;
+					}
+				}
+			}
+
 			span {
-				font-size: 12px;
-				line-height: 8px;
+				font-size: 13px;
+				line-height: 13px;
+				font-weight: 500;
 				color: #d8d8d8;
 			}
 
@@ -1020,7 +1198,9 @@ form {
 			place-content: center;
 
 			.dot {
-				background-color: #fa6400;
+				background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+				background-size: 600% 600%;
+				animation: bg-primary-animation 4s linear infinite;
 				opacity: 0.2;
 				width: 8px;
 				height: 8px;
@@ -1042,7 +1222,7 @@ form {
 
 			img {
 				width: 100%;
-				max-width: 200px;
+				max-width: 300px;
 				align-self: self-end;
 			}
 		}
@@ -1061,7 +1241,7 @@ form {
 
 			p {
 				max-width: 200px;
-				line-height: 21px;
+				line-height: 1.3;
 			}
 		}
 	}
@@ -1075,6 +1255,7 @@ form {
 	// display: none;
 	// visibility: hidden;
 	opacity: 0;
+	height: 0;
 }
 
 #onboarding-cta {
@@ -1096,6 +1277,82 @@ form {
 	}
 }
 
+.bg-dark {
+	* {
+		&::selection {
+			color: rgba(250, 100, 0, 0.2);
+			background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+			background-size: 600% 600%;
+			animation: bg-primary-animation 4s linear infinite;
+		}
+	}
+
+	background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+	background-size: 600% 600%;
+	animation: bg-primary-animation 4s linear infinite;
+
+	input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+	textarea {
+		&::placeholder {
+			user-select: none;
+			color: rgba(255, 255, 255, 0.5);
+			;
+			cursor: text;
+		}
+	}
+
+	.btn {
+		&.btn-primary {
+			color: #fa6400;
+			background: white;
+		}
+	}
+
+	select,
+	input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+	textarea {
+		border: 1.5px solid rgba(255, 255, 255, 1);
+		background-color: rgba(255, 255, 255, 0.05);
+		color: #ffffff;
+
+		&:focus,
+		&:active {
+			// border: 1px solid #ffffff;
+			box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		color: #ffffff !important;
+	}
+
+	.error,
+	.link {
+		color: rgba(255, 255, 255, 0.7) !important;
+	}
+
+	img,
+	svg {
+		path {
+			fill: #ffffff;
+		}
+	}
+
+	form {
+		input {
+			background-color: rgba(255, 255, 255, 0.05);
+			color: #ffffff;
+		}
+	}
+}
+
+
 // LOGIN
 #login-page {
 	display: grid;
@@ -1106,6 +1363,7 @@ form {
 		padding: 30px;
 		place-self: center;
 		text-align: center;
+		margin-top: auto;
 	}
 
 	#login-form {
@@ -1113,6 +1371,7 @@ form {
 		width: 100%;
 
 		form {
+
 			grid-gap: 20px;
 
 			.form-row {
@@ -1190,9 +1449,9 @@ form {
 			grid-gap: 20px;
 
 			input[type="text"] {
-				font-weight: bold;
+				font-weight: 500;
 				font-size: 32px;
-				line-height: 32px;
+				line-height: 1.3;
 				text-align: center;
 			}
 		}
@@ -1355,8 +1614,8 @@ form {
 							}
 
 							.name {
-								font-size: 15px;
-								line-height: 20px;
+								font-size: 13px;
+								line-height: 1.3;
 								color: #222b45;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -1373,23 +1632,23 @@ form {
 		.header {
 			padding: 50px 15px 15px 15px;
 			display: grid;
-			grid-gap: 20px;
-			padding-bottom: 30px;
-			grid-gap: 30px;
-			background-color: #fa6400;
+			grid-gap: 15px;
+			background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+			background-size: 600% 600%;
+			animation: bg-primary-animation 4s linear infinite;
 			// grid-template-rows: max-content max-content;
 			transition: none;
 
 			.delivery-location {
 				padding: 0;
 				display: grid;
-				grid-gap: 10px;
+				grid-gap: 5px;
 
 				h5 {
 					color: #ffffff;
-					font-weight: 600;
+					font-weight: 500;
 					font-size: 13px;
-					line-height: 13px;
+					line-height: 1.3;
 					letter-spacing: 0.6px;
 				}
 
@@ -1422,7 +1681,7 @@ form {
 			.search-box {
 				padding: 0;
 				display: grid;
-				grid-gap: 10px;
+				grid-gap: 5px;
 				grid-auto-flow: column;
 				grid-template-columns: 1fr auto;
 				align-items: center;
@@ -1453,6 +1712,7 @@ form {
 
 				.close-search {
 					padding: 14px;
+					display: none;
 
 					svg {
 						// display: block;
@@ -1465,7 +1725,7 @@ form {
 
 					p {
 						color: #ffffff;
-						font-weight: 700;
+						font-weight: 500;
 						display: none;
 					}
 				}
@@ -1481,7 +1741,7 @@ form {
 			position: fixed;
 			top: 0;
 			left: 0;
-			// padding-bottom: 73px;
+			// padding-bottom: 78px;
 			grid-template-rows: max-content 1fr;
 
 			.header {
@@ -1493,9 +1753,9 @@ form {
 				.search-box {
 					.close-search {
 						padding: 14px;
+						display: block;
 
 						svg {
-							display: none;
 
 							height: 14px;
 
@@ -1526,7 +1786,7 @@ form {
 	}
 
 	#discover-adverts {
-		padding: 30px 0px;
+		padding: 15px 0px;
 		display: block;
 		// width: 100%;
 		// height: 100%;
@@ -1546,7 +1806,7 @@ form {
 			.details {
 				display: grid;
 				text-align: center;
-				grid-gap: 10px;
+				grid-gap: 0px;
 				text-decoration: none;
 
 				.image {
@@ -1555,14 +1815,14 @@ form {
 					display: grid;
 					// padding: 10px;
 					width: 300px;
-					height: 100px;
-					max-height: 100px;
+					height: 79.03px;
+					max-height: 79.03px;
 
 					img {
 						width: 100%;
 						height: 100%;
 						max-width: 300px;
-						max-height: 100px;
+						max-height: 79.03px;
 						object-fit: cover;
 					}
 				}
@@ -1637,6 +1897,7 @@ form {
 		.order {
 			display: grid;
 			text-align: left;
+			text-decoration: none;
 			padding: 15px 7.5px;
 
 			&:first-child {
@@ -1647,9 +1908,9 @@ form {
 				padding-right: 15px;
 			}
 
-			&:active {
-				transform: scale(0.95);
-			}
+			// &:active {
+			// 	transform: scale(0.95);
+			// }
 
 			.details {
 				display: grid;
@@ -1662,12 +1923,11 @@ form {
 
 				.image {
 					display: grid;
-					height: 120px;
 					width: 120px;
-					overflow: hidden;
-					position: relative;
+					height: 120px;
 					border-radius: 4px 4px 0 0;
 					overflow: hidden;
+					position: relative;
 
 					img {
 						width: 100%;
@@ -1701,41 +1961,47 @@ form {
 				}
 
 				.text {
-					padding: 10px 15px;
+					padding: 10px;
 					max-width: 120px;
 					display: grid;
-					grid-gap: 5px;
+					grid-gap: 10px;
 
-					h5,
-					p {
-						overflow: hidden;
-						text-overflow: ellipsis;
-						white-space: nowrap;
+					.name {
+						color: #222b45;
+						font-weight: 500;
+						font-size: 13px;
+						line-height: 1.3;
+						margin-bottom: 0;
 					}
 
 					p {
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 5px;
-						grid-template-columns: max-content 1fr;
-						// align-items: center;
+						grid-template-columns: 1fr max-content;
+						align-items: center;
 
 						span {
-							// color: #ffffff;
 							overflow: hidden;
 							text-overflow: ellipsis;
 							white-space: nowrap;
-							line-height: 15px;
 							font-size: 13px;
+							line-height: 1.3;
+							font-weight: 600;
+							color: #fa6400;
 						}
 
-						img,
-						svg {
-							width: 12px;
-							height: auto;
+						.add-to-cart {
+							padding: 0;
 
-							path {
-								fill: #c5cee0;
+							img,
+							svg {
+								width: 18px;
+								height: auto;
+
+								path {
+									fill: #fa6400;
+								}
 							}
 						}
 					}
@@ -1853,8 +2119,8 @@ form {
 							overflow: hidden;
 							text-overflow: ellipsis;
 							white-space: nowrap;
-							line-height: 15px;
-							font-size: 13px;
+							line-height: 1.3;
+							font-size: 12px;
 						}
 
 						img,
@@ -1903,9 +2169,9 @@ form {
 				padding-right: 15px;
 			}
 
-			&:active {
-				transform: scale(0.95);
-			}
+			// &:active {
+			// 	transform: scale(0.95);
+			// }
 
 			.details {
 				display: grid;
@@ -1918,12 +2184,11 @@ form {
 
 				.image {
 					display: grid;
-					height: 120px;
 					width: 120px;
-					overflow: hidden;
-					position: relative;
+					height: 120px;
 					border-radius: 4px 4px 0 0;
 					overflow: hidden;
+					position: relative;
 
 					img {
 						width: 100%;
@@ -1957,41 +2222,47 @@ form {
 				}
 
 				.text {
-					padding: 10px 15px;
+					padding: 10px;
 					max-width: 120px;
 					display: grid;
-					grid-gap: 5px;
+					grid-gap: 10px;
 
-					h5,
-					p {
-						overflow: hidden;
-						text-overflow: ellipsis;
-						white-space: nowrap;
+					.name {
+						color: #222b45;
+						font-weight: 500;
+						font-size: 13px;
+						line-height: 1.3;
+						margin-bottom: 0;
 					}
 
 					p {
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 5px;
-						grid-template-columns: max-content 1fr;
-						// align-items: center;
+						grid-template-columns: 1fr max-content;
+						align-items: center;
 
 						span {
-							// color: #ffffff;
 							overflow: hidden;
 							text-overflow: ellipsis;
 							white-space: nowrap;
-							line-height: 15px;
 							font-size: 13px;
+							line-height: 1.3;
+							font-weight: 600;
+							color: #fa6400;
 						}
 
-						img,
-						svg {
-							width: 12px;
-							height: auto;
+						.add-to-cart {
+							padding: 0;
 
-							path {
-								fill: #c5cee0;
+							img,
+							svg {
+								width: 18px;
+								height: auto;
+
+								path {
+									fill: #fa6400;
+								}
 							}
 						}
 					}
@@ -2057,7 +2328,7 @@ form {
 
 				.text {
 					display: grid;
-					grid-gap: 5px;
+					grid-gap: 7px;
 					grid-auto-flow: row;
 
 					.first-row {
@@ -2065,12 +2336,12 @@ form {
 						grid-gap: 10px;
 
 						.v-grid {
-							grid-gap: 10px;
+							grid-gap: 5px;
 							grid-template-rows: max-content max-content;
 
 							.name {
 								h5 {
-									line-height: 20px;
+									line-height: 1.3;
 								}
 
 								&:active {
@@ -2079,7 +2350,7 @@ form {
 							}
 
 							p {
-								line-height: 12px;
+								line-height: 1.3;
 								font-size: 12px;
 								display: grid;
 								grid-auto-flow: column;
@@ -2099,7 +2370,7 @@ form {
 
 								span {
 									font-size: 12px;
-									line-height: 12px;
+									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
 									text-overflow: ellipsis;
@@ -2155,8 +2426,8 @@ form {
 							}
 
 							span {
-								font-size: 10px;
-								line-height: 10px;
+								font-size: 11px;
+								line-height: 1.3;
 								color: #8f9bb3;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -2165,7 +2436,7 @@ form {
 
 							b {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #222b45;
 							}
 						}
@@ -2173,8 +2444,8 @@ form {
 						.time {
 							justify-self: right;
 							color: #222b45;
-							font-size: 10px;
-							line-height: 10px;
+							font-size: 11px;
+							line-height: 1.3;
 							text-align: right;
 
 							span {
@@ -2225,7 +2496,7 @@ form {
 						.name {
 							color: #222b45;
 							font-size: 12px;
-							line-height: 14px;
+							line-height: 1.3;
 							margin-bottom: 0;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -2235,7 +2506,7 @@ form {
 						.price {
 							color: #fa6400;
 							font-size: 12px;
-							line-height: 14px;
+							line-height: 1.3;
 							margin-bottom: 0;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -2275,7 +2546,9 @@ form {
 			grid-gap: 20px;
 			padding-bottom: 30px;
 			grid-gap: 30px;
-			background-color: #fa6400;
+			background: linear-gradient(333deg, #ffb22e, #fa9600, #fa6400, #fa9600);
+			background-size: 600% 600% 600%;
+			animation: bg-primary-animation 4s linear infinite;
 			// grid-template-rows: max-content max-content;
 			transition: none;
 
@@ -2321,7 +2594,7 @@ form {
 
 					p {
 						color: #ffffff;
-						font-weight: 700;
+						font-weight: 500;
 						display: block;
 					}
 				}
@@ -2330,9 +2603,9 @@ form {
 	}
 
 	.number-of-results {
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 12px;
-		line-height: 12px;
+		line-height: 1.3;
 		color: #8f9bb3;
 
 		span {
@@ -2404,7 +2677,7 @@ form {
 
 							.name {
 								h5 {
-									line-height: 20px;
+									line-height: 1.3;
 								}
 
 								&:active {
@@ -2413,7 +2686,7 @@ form {
 							}
 
 							p {
-								line-height: 12px;
+								line-height: 1.3;
 								font-size: 12px;
 								display: grid;
 								grid-auto-flow: column;
@@ -2433,7 +2706,7 @@ form {
 
 								span {
 									font-size: 12px;
-									line-height: 12px;
+									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
 									text-overflow: ellipsis;
@@ -2491,7 +2764,7 @@ form {
 
 							span {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #222b45;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -2500,15 +2773,15 @@ form {
 
 							b {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #222b45;
 							}
 						}
 
 						.time {
 							justify-self: right;
-							font-size: 10px;
-							line-height: 10px;
+							font-size: 11px;
+							line-height: 1.3;
 							text-align: right;
 
 							span {
@@ -2597,11 +2870,11 @@ form {
 				// text-overflow: ellipsis;
 				// white-space: nowrap;
 				color: #ffffff;
-				line-height: 33px;
+				line-height: 1.3;
 			}
 
 			.address {
-				line-height: 12px;
+				line-height: 1.3;
 				font-size: 12px;
 				display: grid;
 				grid-auto-flow: column;
@@ -2621,7 +2894,7 @@ form {
 
 				span {
 					font-size: 12px;
-					line-height: 12px;
+					line-height: 1.3;
 					color: #ffffff;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -2648,7 +2921,7 @@ form {
 
 				span {
 					font-size: 12px;
-					line-height: 12px;
+					line-height: 1.3;
 					color: #c5cee0;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -2657,7 +2930,7 @@ form {
 
 				b {
 					font-size: 12px;
-					line-height: 12px;
+					line-height: 1.3;
 					color: #ffffff;
 				}
 			}
@@ -2680,15 +2953,13 @@ form {
 	}
 
 	#products {
-		grid-gap: 5px;
+		grid-gap: 30px;
 		padding: 0;
 		margin: 30px 0;
 		width: 100%;
-		overflow: hidden;
 
 		.products {
 			padding: 0;
-			margin-bottom: 30px;
 
 			.product {
 				display: grid;
@@ -2764,9 +3035,9 @@ form {
 
 						.name {
 							color: #222b45;
-							font-weight: 600;
-							font-size: 15px;
-							line-height: 18px;
+							font-weight: 500;
+							font-size: 13px;
+							line-height: 1.3;
 							margin-bottom: 0;
 						}
 
@@ -2781,8 +3052,8 @@ form {
 								overflow: hidden;
 								text-overflow: ellipsis;
 								white-space: nowrap;
-								font-size: 15px;
-								line-height: 15px;
+								font-size: 13px;
+								line-height: 1.3;
 								font-weight: 600;
 								color: #fa6400;
 							}
@@ -2818,23 +3089,18 @@ form {
 		}
 
 		#product-categories {
-			background: #ffffff;
-			box-shadow: 0px 2px 10px #e6e8ef;
 			display: grid;
-			// grid-gap: 15px;
-			margin-bottom: 30px;
+			grid-gap: 15px;
+			padding: 0px 15px;
 
 			&:last-child {
 				margin-bottom: 0;
 			}
 
 			.section-title {
-				padding: 15px;
+				padding: 0px;
 
-				h5 {
-					font-size: 15px;
-					line-height: 20px;
-					font-weight: 600;
+				h4 {
 					color: #222b45;
 
 					span {
@@ -2851,7 +3117,10 @@ form {
 				grid-template-rows: auto;
 				grid-template-areas: "image details";
 				align-items: center;
-				border-bottom: 1px solid #e6e8ef;
+				background: #FFFFFF;
+				box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+				border-radius: 8px;
+				padding: 10px;
 
 				.image {
 					display: grid;
@@ -2879,12 +3148,11 @@ form {
 					display: grid;
 					grid-template-columns: auto auto auto 1fr;
 					grid-template-rows: auto;
-					grid-gap: 10px;
+					grid-gap: 15px;
 					grid-area: details;
 					align-items: center;
 					grid-template-areas:
 						"name name name name bookmark"
-						"description description description description description"
 						"price bag line like addtocart";
 
 					.name {
@@ -2892,18 +3160,11 @@ form {
 
 						h5 {
 							color: #222b45;
-							font-weight: 600;
-							font-size: 15px;
-							line-height: 18px;
+							font-weight: 500;
+							font-size: 13px;
+							line-height: 1.3;
 							margin-bottom: 0;
 						}
-					}
-
-					.description {
-						grid-area: description;
-						font-size: 12px;
-						line-height: 15px;
-						color: #8f9bb3;
 					}
 
 					.bookmark {
@@ -2925,8 +3186,8 @@ form {
 
 					.price {
 						grid-area: price;
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #fa6400;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -2968,7 +3229,7 @@ form {
 
 						span {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -3191,8 +3452,8 @@ form {
 						// text-overflow: ellipsis;
 						// white-space: nowrap;
 						grid-area: name;
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 					}
 
 					.stars {
@@ -3200,8 +3461,8 @@ form {
 						justify-self: left;
 						display: inline-block;
 						font-family: Times;
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 
 						&::before {
 							content: '★★★★★';
@@ -3216,7 +3477,7 @@ form {
 
 					.date {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #ACB1C0;
 						// overflow: hidden;
 						// text-overflow: ellipsis;
@@ -3228,7 +3489,7 @@ form {
 						grid-area: note;
 						padding: 10px 0px;
 						font-size: 13px;
-						line-height: 18px;
+						line-height: 1.3;
 						font-weight: 400;
 						color: #ACB1C0;
 					}
@@ -3268,26 +3529,21 @@ form {
 	}
 
 	#information {
-		grid-gap: 5px;
-		padding: 0;
-		margin: 30px 0;
+		grid-gap: 30px;
+		padding: 30px 15;
 		width: 100%;
 		overflow: hidden;
-
-		.title {
-			font-size: 15px;
-			line-height: 15px;
-		}
+		background-color: #ffffff;
 
 		p {
-			font-size: 15px;
-			line-height: 20px;
+			font-size: 14px;
+			line-height: 1.3;
 		}
 
 		.map {
 			min-width: 200px;
 			width: 100%;
-			height: 250px;
+			height: 400px;
 			border-radius: 5px;
 			overflow: hidden;
 
@@ -3382,8 +3638,8 @@ form {
 
 			.title {
 				font-size: 17px;
-				line-height: 17px;
-				font-weight: 600;
+				line-height: 1.3;
+				font-weight: 500;
 				padding: 30px 15px 15px 15px;
 			}
 
@@ -3430,9 +3686,9 @@ form {
 					.name {
 						grid-area: name;
 						color: #222b45;
-						font-weight: 600;
-						font-size: 15px;
-						line-height: 18px;
+						font-weight: 500;
+						font-size: 13px;
+						line-height: 1.3;
 						margin-bottom: 0;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -3441,8 +3697,8 @@ form {
 
 					.price {
 						grid-area: price;
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #fa6400;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -3484,7 +3740,7 @@ form {
 
 						span {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -3526,8 +3782,8 @@ form {
 							border-radius: 0;
 							border: none;
 							font-size: 17px;
-							line-height: 17px;
-							font-weight: 600;
+							line-height: 1.3;
+							font-weight: 500;
 							min-width: 20px;
 							text-align: center;
 							color: #222b45;
@@ -3558,7 +3814,7 @@ form {
 
 				.checkbox {
 					label {
-						font-weight: 600;
+						font-weight: 500;
 
 						span {
 							font-weight: 400;
@@ -3598,7 +3854,7 @@ form {
 				.items {
 					grid-area: items;
 					font-size: 12px;
-					line-height: 12px;
+					line-height: 1.3;
 					color: #ffffff;
 					text-transform: uppercase;
 				}
@@ -3606,7 +3862,7 @@ form {
 				.price {
 					grid-area: price;
 					font-size: 17px;
-					line-height: 17px;
+					line-height: 1.3;
 					font-weight: 600;
 					color: #ffffff;
 				}
@@ -3614,9 +3870,9 @@ form {
 				.text {
 					grid-area: text;
 					font-size: 17px;
-					line-height: 17px;
+					line-height: 1.3;
 					color: #ffffff;
-					font-weight: 600;
+					font-weight: 500;
 					justify-self: end;
 				}
 			}
@@ -3735,12 +3991,12 @@ form {
 					grid-area: details;
 					align-items: center;
 					grid-template-areas: "name bookmark"
-						"address address"
+						"address bookmark"
 						"bottom bottom";
 
 					.name {
 						h5 {
-							line-height: 20px;
+							line-height: 1.3;
 						}
 
 						grid-area: name;
@@ -3751,7 +4007,7 @@ form {
 					}
 
 					.address {
-						line-height: 12px;
+						line-height: 1.3;
 						font-size: 12px;
 						display: grid;
 						grid-auto-flow: column;
@@ -3772,7 +4028,7 @@ form {
 
 						span {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -3832,8 +4088,8 @@ form {
 							}
 
 							span {
-								font-size: 10px;
-								line-height: 10px;
+								font-size: 11px;
+								line-height: 1.3;
 								color: #8f9bb3;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -3842,7 +4098,7 @@ form {
 
 							b {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #222b45;
 							}
 						}
@@ -3850,8 +4106,8 @@ form {
 						.time {
 							justify-self: right;
 							color: #222b45;
-							font-size: 10px;
-							line-height: 10px;
+							font-size: 11px;
+							line-height: 1.3;
 							text-align: right;
 
 							span {
@@ -3891,14 +4147,6 @@ form {
 
 // ORDERS PAGE
 #orders-page {
-	#header {
-		padding: 50px 15px 15px 15px;
-		display: grid;
-		grid-auto-flow: column;
-		grid-template-columns: 1fr auto;
-		align-items: center;
-	}
-
 	#ongoing {
 		.orders {
 			display: grid;
@@ -3955,7 +4203,7 @@ form {
 						"items status";
 
 					.name {
-						line-height: 20px;
+						line-height: 1.3;
 						grid-area: name;
 
 						&:active {
@@ -3965,7 +4213,7 @@ form {
 
 					.id {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #222B45;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -3979,7 +4227,7 @@ form {
 
 					.items {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #ACB1C0;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -3989,8 +4237,8 @@ form {
 
 					.status {
 						font-size: 13px;
-						line-height: 16px;
-						font-weight: 600;
+						line-height: 1.3;
+						font-weight: 500;
 						grid-area: status;
 
 						&.waiting {
@@ -4090,7 +4338,7 @@ form {
 						"items date";
 
 					.name {
-						line-height: 20px;
+						line-height: 1.3;
 						grid-area: name;
 
 						&:active {
@@ -4100,7 +4348,7 @@ form {
 
 					.items {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #8f9bb3;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4114,7 +4362,7 @@ form {
 
 					.date {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #ACB1C0;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4205,7 +4453,7 @@ form {
 					padding: 10px;
 
 					.name {
-						line-height: 20px;
+						line-height: 1.3;
 
 						&:active {
 							opacity: 0.5;
@@ -4213,7 +4461,7 @@ form {
 					}
 
 					.address {
-						line-height: 12px;
+						line-height: 1.3;
 						font-size: 12px;
 						display: grid;
 						grid-auto-flow: column;
@@ -4233,7 +4481,7 @@ form {
 
 						span {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -4243,7 +4491,7 @@ form {
 
 					.items {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #8f9bb3;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4297,8 +4545,8 @@ form {
 
 
 
-// FAVOURITES PAGE
-#favourites-page {
+// BOOKMARKS PAGE
+#bookmarks-page {
 	#header {
 		padding: 50px 15px 15px 15px;
 		display: grid;
@@ -4308,11 +4556,11 @@ form {
 	}
 
 	.category {
-		.favourites {
+		.bookmarks {
 			display: grid;
 			grid-gap: 15px;
 
-			.favourite {
+			.bookmark {
 				background: #ffffff;
 				box-shadow: 0px 2px 10px #e6e8ef;
 				border-radius: 4px;
@@ -4356,12 +4604,12 @@ form {
 					grid-area: details;
 					align-items: center;
 					grid-template-areas: "name bookmark"
-						"address address"
+						"address bookmark"
 						"bottom bottom";
 
 					.name {
 						h5 {
-							line-height: 20px;
+							line-height: 1.3;
 						}
 
 						grid-area: name;
@@ -4372,7 +4620,7 @@ form {
 					}
 
 					.restaurant-name {
-						line-height: 12px;
+						line-height: 1.3;
 						font-size: 12px;
 						display: grid;
 						grid-auto-flow: column;
@@ -4393,7 +4641,7 @@ form {
 
 						span {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #8f9bb3;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -4452,8 +4700,8 @@ form {
 							}
 
 							span {
-								font-size: 10px;
-								line-height: 10px;
+								font-size: 11px;
+								line-height: 1.3;
 								color: #8f9bb3;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -4462,7 +4710,7 @@ form {
 
 							b {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #222b45;
 							}
 						}
@@ -4472,7 +4720,7 @@ form {
 							color: #fa6400;
 							font-weight: 600;
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							overflow: hidden;
 							text-overflow: ellipsis;
 							white-space: nowrap;
@@ -4577,8 +4825,9 @@ form {
 					img,
 					svg {
 						grid-area: icon;
-						width: 16px;
-						height: auto;
+						height: 20px;
+						width: 20px;
+						vertical-align: middle;
 
 						path {
 							fill: #C5CEE0;
@@ -4588,8 +4837,8 @@ form {
 
 				.name {
 					grid-area: name;
-					font-size: 15px;
-					line-height: 15px;
+					font-size: 14px;
+					line-height: 1.3;
 					color: #222B45;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -4657,9 +4906,9 @@ form {
 
 			.save {
 				padding: 5px 0px 5px 10px;
-				font-size: 15px;
-				line-height: 18px;
-				font-weight: 600;
+				font-size: 13px;
+				line-height: 1.3;
+				font-weight: 500;
 				color: #fa6400;
 				justify-self: right;
 			}
@@ -4750,7 +4999,7 @@ form {
 
 					.title {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #8F9BB3;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4758,8 +5007,8 @@ form {
 					}
 
 					.name {
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #222B45;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4767,7 +5016,7 @@ form {
 
 						&.password {
 							font-size: 50px;
-							line-height: 50px;
+							line-height: 1.3;
 							margin-top: -30px;
 						}
 					}
@@ -4809,7 +5058,6 @@ form {
 		grid-gap: 30px;
 		grid-auto-flow: row;
 		align-items: center;
-		background-color: transparent;
 
 		.header-actions {
 			display: grid;
@@ -4833,9 +5081,9 @@ form {
 
 			.edit {
 				padding: 5px 0px 5px 10px;
-				font-size: 15px;
-				line-height: 18px;
-				font-weight: 600;
+				font-size: 13px;
+				line-height: 1.3;
+				font-weight: 500;
 				color: #fa6400;
 				justify-self: right;
 			}
@@ -4915,8 +5163,8 @@ form {
 					grid-area: details;
 
 					.number {
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #222B45;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -4925,7 +5173,7 @@ form {
 
 					.date {
 						font-size: 12px;
-						line-height: 12px;
+						line-height: 1.3;
 						color: #8F9BB3;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -5039,9 +5287,9 @@ form {
 
 			.save {
 				padding: 5px 0px 5px 10px;
-				font-size: 15px;
-				line-height: 18px;
-				font-weight: 600;
+				font-size: 13px;
+				line-height: 1.3;
+				font-weight: 500;
 				color: #fa6400;
 				justify-self: right;
 			}
@@ -5120,8 +5368,9 @@ form {
 					grid-auto-flow: row;
 
 					.location-address {
-						font-size: 15px;
-						line-height: 18px;
+						font-size: 13px;
+						// line-height: 0px;
+						align-items: center;
 						color: #222B45;
 						display: grid;
 						grid-auto-flow: column;
@@ -5141,8 +5390,8 @@ form {
 
 					.name,
 					.phone {
-						line-height: 18px;
-						font-size: 15px;
+						line-height: 1.3;
+						font-size: 13px;
 						display: grid;
 						grid-auto-flow: column;
 						grid-gap: 10px;
@@ -5160,8 +5409,8 @@ form {
 						}
 
 						span {
-							font-size: 15px;
-							line-height: 18px;
+							font-size: 13px;
+							line-height: 1.3;
 							color: #8f9bb3;
 						}
 					}
@@ -5186,8 +5435,8 @@ form {
 				border: 1px dashed #C5CEE0;
 				border-radius: 8px;
 				padding: 20px 40px;
-				font-size: 15px;
-				line-height: 18px;
+				font-size: 13px;
+				line-height: 1.3;
 				text-align: center;
 				color: #ACB1C0;
 			}
@@ -5241,9 +5490,9 @@ form {
 
 			.save {
 				padding: 5px 0px 5px 10px;
-				font-size: 15px;
-				line-height: 18px;
-				font-weight: 600;
+				font-size: 13px;
+				line-height: 1.3;
+				font-weight: 500;
 				color: #fa6400;
 				justify-self: right;
 			}
@@ -5263,9 +5512,9 @@ form {
 				grid-auto-flow: row;
 
 				.rating-type {
-					font-size: 15px;
-					line-height: 18px;
-					font-weight: 600;
+					font-size: 13px;
+					line-height: 1.3;
+					font-weight: 500;
 					color: #ACB1C0;
 				}
 
@@ -5321,12 +5570,12 @@ form {
 								"address address";
 
 							.name {
-								line-height: 20px;
+								line-height: 1.3;
 								grid-area: name;
 							}
 
 							.address {
-								line-height: 12px;
+								line-height: 1.3;
 								font-size: 12px;
 								display: grid;
 								grid-auto-flow: column;
@@ -5347,7 +5596,7 @@ form {
 
 								span {
 									font-size: 12px;
-									line-height: 12px;
+									line-height: 1.3;
 									color: #8f9bb3;
 									overflow: hidden;
 									text-overflow: ellipsis;
@@ -5402,13 +5651,13 @@ form {
 
 						h5 {
 							font-size: 17px;
-							line-height: 20px;
+							line-height: 1.3;
 							color: #222B45;
 						}
 
 						p {
-							font-size: 15px;
-							line-height: 24px;
+							font-size: 13px;
+							line-height: 1.3;
 							color: #ACB1C0;
 						}
 
@@ -5439,9 +5688,9 @@ form {
 				grid-auto-flow: row;
 
 				.rating-type {
-					font-size: 15px;
-					line-height: 18px;
-					font-weight: 600;
+					font-size: 13px;
+					line-height: 1.3;
+					font-weight: 500;
 					color: #ACB1C0;
 				}
 
@@ -5485,8 +5734,8 @@ form {
 						}
 
 						.name {
-							font-size: 15px;
-							line-height: 20px;
+							font-size: 13px;
+							line-height: 1.3;
 							color: #222B45;
 						}
 
@@ -5562,111 +5811,15 @@ form {
 // DELIVERY LOCATION PAGE
 #delivery-location-page {
 	#header {
-		padding: 50px 15px 15px 15px;
-		display: grid;
-		grid-gap: 30px;
-		grid-auto-flow: row;
-		align-items: center;
-		background-color: transparent;
-		z-index: 1;
-		position: fixed;
-		width: 100%;
-		background: linear-gradient(180deg, #FFFFFF 5.94%, rgba(255, 255, 255, 0.0001) 100%);
-
-		.header-actions {
-			display: grid;
-			grid-gap: 15px;
-			grid-auto-flow: column;
-			grid-template-columns: auto 1fr;
-			align-items: center;
-
-			.back {
-				padding: 5px 10px 5px 0;
-				justify-self: left;
-
-				svg,
-				img {
-					height: 12px;
-
-					path {
-						color: #222B45;
-					}
-				}
-			}
-
-			h4 {
-				justify-self: center;
-				margin-left: -45px;
-			}
-		}
+		border-bottom: 1px solid #e6e8ef;
 	}
 
-	#map {
+	#add-address {
 		padding: 0;
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 0;
+		background-color: #ffffff;
 
-		img {
-			width: 130%;
-			height: 130%;
-			object-fit: cover;
-		}
-	}
-
-	#add-address-popup {
-		// height: 25vh;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		z-index: 3;
-		transition: all 0.2s linear 0s;
-		// cursor: pointer;
-
-		// .popup-overlay {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-color: rgba(34, 43, 69, 0.7);
-		// 	position: absolute;
-		// 	z-index: 0;
-		// }
-
-		.close-popup {
-			width: 100%;
-			border-radius: 10px 10px 0px 0px;
-			background-color: #ffffff;
-			box-shadow: 0px -3px 15px rgba(98, 107, 149, 0.139724);
-			padding: 10px;
-			background-color: #ffffff;
-			transition: all 0.2s linear 0s;
-
-			&:active {
-				background-color: #edf1f6;
-			}
-
-			img,
-			svg {
-				height: 8px;
-				transform: scaleY(-1);
-
-				path {
-					fill: #C5CEE0;
-				}
-			}
-		}
-
-		.popup-content {
-
-			position: relative;
-			bottom: 0;
-			left: 0;
-			height: 0;
+		.content {
+			display: grid;
 			width: 100%;
 			z-index: 1;
 			background-color: #ffffff;
@@ -5675,28 +5828,13 @@ form {
 
 			.title {
 				font-size: 17px;
-				line-height: 17px;
-				font-weight: 600;
-				padding: 15px;
+				line-height: 1.3;
+				font-weight: 500;
+				padding: 30px 15px 15px 15px;
 			}
 
 			form {
 				padding: 15px 15px 50px 15px;
-			}
-		}
-
-		&.active {
-			// overflow: hidden;
-			// display: block;
-
-			.close-popup {
-				svg {
-					transform: scaleY(1);
-				}
-			}
-
-			.popup-content {
-				height: max-content;
 			}
 		}
 	}
@@ -5717,127 +5855,46 @@ form {
 
 // TRACK ORDER PAGE
 #track-order-page {
-	#header {
-		padding: 50px 15px 15px 15px;
-		display: grid;
-		grid-gap: 30px;
-		grid-auto-flow: row;
-		align-items: center;
-		background-color: transparent;
-		z-index: 1;
-		position: fixed;
-		width: 100%;
-		background: linear-gradient(180deg, #FFFFFF 5.94%, rgba(255, 255, 255, 0.0001) 100%);
+	#track-order {
+		// position: fixed;
+		// bottom: 0;
+		// left: 0;
+		// width: 100%;
+		// z-index: 3;
+		// transition: none;
+		// min-height: 50%;
+		padding: 20px 15px;
 
-		.header-actions {
-			display: grid;
-			grid-gap: 15px;
-			grid-auto-flow: column;
-			grid-template-columns: auto 1fr;
-			align-items: center;
-
-			.back {
-				padding: 5px 10px 5px 0;
-				justify-self: left;
-
-				svg,
-				img {
-					height: 12px;
-
-					path {
-						color: #222B45;
-					}
-				}
-			}
-
-			h4 {
-				justify-self: center;
-				margin-left: -45px;
-			}
-		}
-	}
-
-	#map {
-		padding: 0;
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 0;
-
-		img {
-			width: 130%;
-			height: 130%;
-			object-fit: cover;
-		}
-	}
-
-	#track-order-popup {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		z-index: 3;
-		transition: none;
-		min-height: 50%;
-
-		.popup-content {
-			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: max-content;
-			max-height: 80%;
-			width: 100%;
-			z-index: 1;
-			background-color: #ffffff;
-			overflow-y: scroll;
-			border-radius: 10px 10px 0px 0px;
-			width: 100%;
-			box-shadow: 0px -3px 15px rgba(98, 107, 149, 0.139724);
-			transition: none;
-
-			.close-popup {
-				width: 100%;
-				border-radius: 10px 10px 0px 0px;
-				background-color: #ffffff;
-				padding: 10px;
-				background-color: #ffffff;
-				transition: none;
-				position: sticky;
-				top: 0;
-				z-index: 1;
-
-				&:active {
-					background-color: #edf1f6;
-				}
-
-				img,
-				svg {
-					height: 8px;
-					transform: scaleY(-1);
-
-					path {
-						fill: #C5CEE0;
-					}
-				}
-			}
+		.content {
+			// display: block;
+			// position: absolute;
+			// bottom: 0;
+			// left: 0;
+			// right: 0;
+			// height: max-content;
+			// max-height: 80%;
+			// width: 100%;
+			// z-index: 1;
+			// overflow-y: scroll;
+			// border-radius: 10px 10px 0px 0px;
+			// width: 100%;
+			// box-shadow: 0px -3px 15px rgba(98, 107, 149, 0.139724);
+			// transition: none;
 
 			.tracking-details {
 				display: grid;
 				grid-auto-flow: row;
-				grid-gap: 0;
+				grid-gap: 20px;
 
-				.title {
-					font-size: 15px;
-					line-height: 20px;
-					font-weight: 600;
-					padding: 15px;
-					border-bottom: 1px solid #e6e8ef;
+				.title.constrain {
+					font-size: 13px;
+					line-height: 1.3;
+					font-weight: 500;
+					text-align: center;
+					padding: 30px 15px;
+					background: #FFFFFF;
+					box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+					border-radius: 8px;
 				}
 
 				.order {
@@ -5847,7 +5904,10 @@ form {
 					grid-template-rows: auto;
 					grid-template-areas: "image details";
 					align-items: center;
-					border-bottom: 1px solid #e6e8ef;
+					padding: 15px;
+					background: #FFFFFF;
+					box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+					border-radius: 8px;
 
 					.image {
 						display: grid;
@@ -5886,13 +5946,13 @@ form {
 							grid-area: name;
 
 							h5 {
-								line-height: 20px;
+								line-height: 1.3;
 							}
 						}
 
 						.id {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #222B45;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -5906,7 +5966,7 @@ form {
 
 						.items {
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 							color: #ACB1C0;
 							overflow: hidden;
 							text-overflow: ellipsis;
@@ -5916,8 +5976,8 @@ form {
 
 						.status {
 							font-size: 13px;
-							line-height: 16px;
-							font-weight: 600;
+							line-height: 1.3;
+							font-weight: 500;
 
 							&.waiting {
 								color: #6236FF;
@@ -5941,7 +6001,10 @@ form {
 					grid-template-rows: auto;
 					grid-template-areas: "image details";
 					align-items: center;
-					border-bottom: 1px solid #e6e8ef;
+					padding: 15px;
+					background: #FFFFFF;
+					box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+					border-radius: 8px;
 
 					.image {
 						display: grid;
@@ -5975,7 +6038,7 @@ form {
 
 						.name {
 							h5 {
-								line-height: 20px;
+								line-height: 1.3;
 							}
 
 							grid-area: name;
@@ -5990,7 +6053,7 @@ form {
 							grid-area: reviews;
 							color: #222B45;
 							font-size: 12px;
-							line-height: 12px;
+							line-height: 1.3;
 
 							img,
 							svg {
@@ -6004,7 +6067,7 @@ form {
 
 							span {
 								font-size: 12px;
-								line-height: 12px;
+								line-height: 1.3;
 								color: #ACB1C0;
 							}
 						}
@@ -6053,16 +6116,21 @@ form {
 				}
 
 				.trip {
-					display: none;
+					display: grid;
 					grid-gap: 15px;
 					grid-auto-flow: row;
+					padding: 15px;
+					background: #FFFFFF;
+					box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+					border-radius: 8px;
 
 					.title {
 						font-size: 17px;
-						line-height: 17px;
-						font-weight: 600;
+						line-height: 1.3;
+						font-weight: 500;
 						border: none;
 						padding: 0;
+						text-align: left;
 					}
 
 					.order-timeline {
@@ -6128,7 +6196,7 @@ form {
 								}
 
 								h5 {
-									line-height: 20px;
+									line-height: 1.3;
 								}
 							}
 
@@ -6136,7 +6204,7 @@ form {
 								h5 {
 									color: #ACB1C0;
 									font-weight: 400;
-									line-height: 20px;
+									line-height: 1.3;
 								}
 
 								&::before {
@@ -6198,13 +6266,13 @@ form {
 								h5 {
 									color: #ACB1C0;
 									font-weight: 400;
-									line-height: 20px;
+									line-height: 1.3;
 								}
 
 								.time {
 									color: #222B45;
-									font-weight: 600;
-									line-height: 10px;
+									font-weight: 500;
+									line-height: 1.3;
 								}
 
 								img,
@@ -6221,54 +6289,33 @@ form {
 						}
 					}
 				}
-
-				.rate-rider {
-					padding: 70px 10px;
-					display: none;
-					grid-gap: 10px;
-					grid-auto-flow: row;
-					text-align: center;
-
-					h5 {
-						font-size: 17px;
-						line-height: 20px;
-						color: #222B45;
-					}
-
-					p {
-						font-size: 15px;
-						line-height: 24px;
-						color: #ACB1C0;
-					}
-
-					.rating-stars {
-						margin: 30px;
-
-						.icon {
-							&:active {
-								transform: scale(0.9);
-							}
-						}
-					}
-				}
 			}
 
-			.rider-rated {
+			.rate-rider {
 				display: none;
+				padding: 30px 15px;
+				grid-gap: 10px;
 				grid-auto-flow: row;
-				grid-gap: 15px;
-				padding-bottom: 50px;
+				text-align: center;
 
-				.back {
-					padding: 5px 10px 5px 0;
-					justify-self: left;
+				h5 {
+					font-size: 17px;
+					line-height: 1.3;
+					color: #222B45;
+				}
 
-					svg,
-					img {
-						height: 12px;
+				p {
+					font-size: 13px;
+					line-height: 1.3;
+					color: #ACB1C0;
+				}
 
-						path {
-							color: #222B45;
+				.rating-stars {
+					margin: 30px;
+
+					.icon {
+						&:active {
+							transform: scale(0.9);
 						}
 					}
 				}
@@ -6280,13 +6327,8 @@ form {
 					text-align: center;
 				}
 
-				.rating-stars {
-					display: none;
-					margin: 30px;
-				}
-
 				.compliments {
-					display: none;
+					display: grid;
 					grid-auto-flow: row;
 					grid-gap: 20px;
 					padding: 25px 0;
@@ -6310,43 +6352,13 @@ form {
 				}
 			}
 
-			&.rated {
+			&.rate {
 				.tracking-details {
 					display: none;
 				}
 
-				.rider-rated {
-					display: grid;
-				}
-			}
-		}
-
-		&.active {
-			background-color: rgba(34, 43, 69, 0.7);
-			backdrop-filter: blur(5px);
-			height: 100vh;
-
-			.close-popup {
-				svg {
-					transform: scaleY(1);
-				}
-			}
-
-			.popup-content {
-
-				.trip,
 				.rate-rider {
 					display: grid;
-				}
-
-				.rider-rated {
-					.rating-stars {
-						display: inline-block;
-					}
-
-					.compliments {
-						display: grid;
-					}
 				}
 			}
 		}
@@ -6404,12 +6416,12 @@ form {
 			grid-gap: 10px;
 
 			h5 {
-				line-height: 33px;
+				line-height: 1.3;
 			}
 
 			.id {
-				font-size: 15px;
-				line-height: 15px;
+				font-size: 13px;
+				line-height: 1.3;
 				color: #222B45;
 
 				span {
@@ -6468,8 +6480,8 @@ form {
 				align-items: center;
 
 				.location-address {
-					font-size: 15px;
-					line-height: 18px;
+					font-size: 13px;
+					line-height: 1.3;
 					color: #222B45;
 					display: grid;
 					grid-auto-flow: column;
@@ -6489,8 +6501,8 @@ form {
 
 				.name,
 				.phone {
-					line-height: 18px;
-					font-size: 15px;
+					line-height: 1.3;
+					font-size: 13px;
 					display: grid;
 					grid-auto-flow: column;
 					grid-gap: 10px;
@@ -6508,8 +6520,8 @@ form {
 					}
 
 					span {
-						font-size: 15px;
-						line-height: 18px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #8f9bb3;
 					}
 				}
@@ -6528,7 +6540,7 @@ form {
 
 			p {
 				font-size: 12px;
-				line-height: 12px;
+				line-height: 1.3;
 			}
 
 			.v-grid {
@@ -6576,7 +6588,7 @@ form {
 				p {
 					color: #ACB1C0;
 					font-size: 13px;
-					line-height: 13px;
+					line-height: 1.3;
 				}
 			}
 		}
@@ -6595,7 +6607,7 @@ form {
 
 				p:nth-child(2) {
 					justify-self: end;
-					font-weight: 600;
+					font-weight: 500;
 				}
 			}
 
@@ -6698,9 +6710,9 @@ form {
 
 						.name {
 							color: #222b45;
-							font-weight: 600;
-							font-size: 15px;
-							line-height: 18px;
+							font-weight: 500;
+							font-size: 13px;
+							line-height: 1.3;
 							margin-bottom: 0;
 						}
 
@@ -6715,9 +6727,9 @@ form {
 								overflow: hidden;
 								text-overflow: ellipsis;
 								white-space: nowrap;
-								font-size: 15px;
-								line-height: 15px;
-								font-weight: 600;
+								font-size: 13px;
+								line-height: 1.3;
+								font-weight: 500;
 								color: #fa6400;
 							}
 
@@ -6826,7 +6838,7 @@ form {
 
 			p {
 				font-size: 12px;
-				line-height: 12px;
+				line-height: 1.3;
 			}
 
 			.v-grid {
@@ -6917,8 +6929,8 @@ form {
 					}
 
 					.number {
-						font-size: 15px;
-						line-height: 15px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #222B45;
 					}
 
@@ -7008,12 +7020,12 @@ form {
 			grid-gap: 10px;
 
 			h5 {
-				line-height: 33px;
+				line-height: 1.3;
 			}
 
 			.id {
-				font-size: 15px;
-				line-height: 15px;
+				font-size: 13px;
+				line-height: 1.3;
 				color: #222B45;
 
 				span {
@@ -7072,8 +7084,8 @@ form {
 				align-items: center;
 
 				.location-address {
-					font-size: 15px;
-					line-height: 18px;
+					font-size: 13px;
+					line-height: 1.3;
 					color: #222B45;
 					display: grid;
 					grid-auto-flow: column;
@@ -7093,8 +7105,8 @@ form {
 
 				.name,
 				.phone {
-					line-height: 18px;
-					font-size: 15px;
+					line-height: 1.3;
+					font-size: 13px;
 					display: grid;
 					grid-auto-flow: column;
 					grid-gap: 10px;
@@ -7112,8 +7124,8 @@ form {
 					}
 
 					span {
-						font-size: 15px;
-						line-height: 18px;
+						font-size: 13px;
+						line-height: 1.3;
 						color: #8f9bb3;
 					}
 				}
@@ -7132,7 +7144,7 @@ form {
 
 			p {
 				font-size: 12px;
-				line-height: 12px;
+				line-height: 1.3;
 			}
 
 			.v-grid {
@@ -7180,7 +7192,7 @@ form {
 				p {
 					color: #ACB1C0;
 					font-size: 13px;
-					line-height: 13px;
+					line-height: 1.3;
 				}
 			}
 		}
@@ -7199,7 +7211,7 @@ form {
 
 				p:nth-child(2) {
 					justify-self: end;
-					font-weight: 600;
+					font-weight: 500;
 				}
 			}
 
@@ -7245,6 +7257,329 @@ form {
 			width: 100%;
 			display: block;
 			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// CART PAGE
+#cart-page {
+	#cart {
+		display: grid;
+		grid-gap: 15px;
+		grid-auto-flow: row;
+		padding: 20px 15px;
+
+		.cart-item {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-gap: 10px;
+			grid-template-rows: auto;
+			grid-template-areas: "image details";
+			align-items: center;
+			padding: 15px;
+			background: #FFFFFF;
+			box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+			border-radius: 8px;
+
+			.image {
+				display: grid;
+				width: 100px;
+				height: 100px;
+				border-radius: 8px;
+				overflow: hidden;
+				grid-area: image;
+
+				&:active {
+					transform: scale(0.95);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.details {
+				display: grid;
+				grid-template-columns: auto auto auto 1fr;
+				grid-template-rows: auto;
+				grid-gap: 10px;
+				grid-area: details;
+				align-items: center;
+				grid-template-areas:
+					"name name name name"
+					"price price price quantity";
+
+				.name {
+					grid-area: name;
+					color: #222b45;
+					font-weight: 500;
+					font-size: 13px;
+					line-height: 1.3;
+					margin-bottom: 0;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					max-height: 36px;
+				}
+
+				.price {
+					grid-area: price;
+					font-size: 13px;
+					line-height: 1.3;
+					color: #fa6400;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				.quantity {
+					grid-area: quantity;
+					display: grid;
+					grid-auto-flow: column;
+					grid-gap: 10px;
+					align-items: center;
+					grid-template-columns: max-content max-content max-content;
+					justify-content: right;
+
+					.btn {
+						padding: 0;
+
+						img,
+						svg {
+							width: 20px;
+							height: auto;
+
+							rect {
+								fill: #fa6400;
+								opacity: 1;
+							}
+
+							path {
+								fill: #ffffff;
+								opacity: 1;
+							}
+						}
+					}
+
+					span {
+						padding: 0;
+						border-radius: 0;
+						border: none;
+						font-size: 17px;
+						line-height: 1.3;
+						font-weight: 500;
+						min-width: 20px;
+						text-align: center;
+						color: #222b45;
+					}
+				}
+			}
+		}
+	}
+
+	#cart-totals {
+		display: grid;
+		grid-gap: 15px;
+		grid-auto-flow: row;
+		padding-top: 0 !important;
+		padding: 20px 15px;
+
+		.constrain {
+			display: grid;
+			grid-gap: 10px;
+			grid-auto-flow: row;
+			padding: 15px;
+			background: #FFFFFF;
+			box-shadow: 0px 2px 10px rgba(85, 85, 85, 0.1);
+			border-radius: 8px;
+		}
+
+		.h-grid {
+
+			p {
+				color: #222B45;
+			}
+
+			p:nth-child(2) {
+				justify-self: end;
+				font-weight: 500;
+			}
+		}
+
+		.totals {
+			display: grid;
+			grid-gap: 10px;
+			grid-auto-flow: column;
+
+			h4 {
+				color: #FA6400;
+			}
+
+			h4:nth-child(2) {
+				justify-self: end;
+			}
+		}
+	}
+
+	#big-cart-btn {
+		padding: 20px 15px;
+
+		.big-cart-btn {
+			display: grid;
+			// text-align: center;
+			width: 100%;
+			padding: 25px;
+			font-size: 17px;
+			line-height: 1.3;
+			color: #ffffff;
+			font-weight: 500;
+		}
+	}
+
+	#similar-products {
+		display: grid;
+		grid-gap: 0px;
+		padding-top: 20px;
+
+		.products {
+			padding: 0;
+
+			.product {
+				display: grid;
+				text-align: left;
+				text-decoration: none;
+				padding: 15px 7.5px;
+
+				&:first-child {
+					padding-left: 15px;
+				}
+
+				&:last-child {
+					padding-right: 15px;
+				}
+
+				// &:active {
+				// 	transform: scale(0.95);
+				// }
+
+				.details {
+					display: grid;
+					grid-gap: 5px;
+					text-align: left;
+					text-decoration: none;
+					background: #ffffff;
+					box-shadow: 0px 2px 10px #e6e8ef;
+					border-radius: 4px;
+
+					.image {
+						display: grid;
+						width: 120px;
+						height: 120px;
+						border-radius: 4px 4px 0 0;
+						overflow: hidden;
+						position: relative;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+
+						.bookmark {
+							position: absolute;
+							top: 0px;
+							right: 0px;
+							padding: 10px;
+							border-radius: 0;
+
+							img,
+							svg {
+								width: auto;
+								height: 15px;
+								border-radius: 0;
+
+								path {
+									// fill: #ffffff;
+									stroke: #ffffff;
+								}
+							}
+
+							&:active {
+								transform: scale(0.95);
+							}
+						}
+					}
+
+					.text {
+						padding: 10px;
+						max-width: 120px;
+						display: grid;
+						grid-gap: 10px;
+
+						.name {
+							color: #222b45;
+							font-weight: 500;
+							font-size: 13px;
+							line-height: 1.3;
+							margin-bottom: 0;
+						}
+
+						p {
+							display: grid;
+							grid-auto-flow: column;
+							grid-gap: 5px;
+							grid-template-columns: 1fr max-content;
+							align-items: center;
+
+							span {
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								font-size: 13px;
+								line-height: 1.3;
+								font-weight: 500;
+								color: #fa6400;
+							}
+
+							.add-to-cart {
+								padding: 0;
+
+								img,
+								svg {
+									width: 18px;
+									height: auto;
+
+									path {
+										fill: #fa6400;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.bookmarked {
+					.bookmark {
+						svg {
+							path {
+								fill: #fa6400;
+								stroke: #fa6400 !important;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

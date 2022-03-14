@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Confirm Order">
 	<meta name="robots" content="index, follow">
 
@@ -27,7 +27,7 @@
 			</a>
 
 			<div class="text">
-				<h2 class="title">Confirm Order</h2>
+				<h1 class="title">Confirm Order</h1>
 
 				<p class="id">
 					<span>ID:</span> 43e2 116H
@@ -88,16 +88,16 @@
 
 			<div class="cart-totals constrain">
 				<div class="h-grid">
-					<p>Subtotal (1 item)</p>
-					<p>₦700.00</p>
+					<p>Subtotal</p>
+					<p>$700.00</p>
 				</div>
 				<div class="h-grid">
-					<p>Ship Fee (2.4 Km)</p>
-					<p>₦850.00</p>
+					<p>Shipping Fee (2.4 Km)</p>
+					<p>$850.00</p>
 				</div>
 				<div class="totals">
 					<h4>Total</h4>
-					<h4>₦1550.00</h4>
+					<h4>$1550.00</h4>
 				</div>
 			</div>
 		</section>
@@ -121,7 +121,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -141,7 +141,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -161,7 +161,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -181,7 +181,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -201,7 +201,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -221,7 +221,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>
@@ -241,7 +241,7 @@
 						<div class="text">
 							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 							<p>
-								<span class="price">₦1,500</span>
+								<span class="price">$1,500</span>
 								<button type="button" class="btn add-to-cart">
 									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
 								</button>

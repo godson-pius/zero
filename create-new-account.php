@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="author" content="Zero30">
+    <meta name="author" content="Fudhunt">
     <meta name="description" content="Create New Account">
     <meta name="robots" content="index, follow">
 
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
     <title>Create New Account</title>
 </head>
 
-<body id="create-new-account-page" class="bg-offwhite container">
+<body id="create-new-account-page" class="bg-dark container">
 
     <section id="header" class="constrain">
         <div class="navigation">

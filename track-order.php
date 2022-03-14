@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Tracking on Map">
 	<meta name="robots" content="index, follow">
 
@@ -16,30 +16,22 @@
 	<title>Tracking on Map</title>
 </head>
 
-<body id="track-order-page" class="container bg-offwhite">
-	<section id="header" class="header-white">
-		<div class="header-actions constrain">
-			<a href="address" class="back link">
-				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
-			</a>
-
-			<h4>Tracking on Map</h4>
+<body id="track-order-page" class="container bg-offwhite with-bottom-menu">
+	<section id="header" class="constrain header-white">
+		<div class="navigation">
+            <a href="orders" class="back">
+                <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
+            </a>
+        </div>	
+		<div class="text">
+			<h1 class="name">Track Order</h1>
 		</div>
 	</section>
 
-	<section id="map" class="constrain">
-		<img src="assets/images/others/rider-map.png" height="100px" alt="Restaurant Image">
-	</section>
-
-	<section id="track-order-popup" class="popup active">
-		<!-- This popup has 2 screens. The second one comes up immediately the user rates the driver.
-		The class responsible for the switching is ".rated" You can switch by adding a ".rated" class to the popup-content section. It'll look like this: "popup-content rated" -->
-		<form action="" class="popup-content">
-			<!-- This button closes the popup, it has been implemented. -->
-			<button type="button" class="close-popup">
-				<img class="svg" src="assets/images/icons/close-popup.svg" height="10px" alt="Close Popup">
-			</button>
-
+	<section id="track-order" class="">
+		<!-- This section has 2 screens. The second one comes up immediately the order completes so the user rates the driver.
+		The class responsible for the switching is ".rate" You can switch by adding a ".rate" class to the .content section. It'll look like this: "content rate" -->
+		<form action="" class="content">
 			<div class="tracking-details">
 				<h5 class="title constrain">Your order will arrive in 5:35</h5>
 
@@ -114,52 +106,12 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="rate-rider constrain">
-					<h4>Rate your rider</h4>
-					<p>Your feedback will help us improve shipping experience better.</p>
-					<div class="rating-stars">
-						<label>
-							<input id="rating-radio" type="radio" name="stars" value="1" />
-							<span class="icon">★</span>
-						</label>
-						<label>
-							<input id="rating-radio" type="radio" name="stars" value="2" />
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-						</label>
-						<label>
-							<input id="rating-radio" type="radio" name="stars" value="3" />
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-						</label>
-						<label>
-							<input id="rating-radio" type="radio" name="stars" value="4" />
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-						</label>
-						<label>
-							<input id="rating-radio" type="radio" name="stars" value="5" />
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-							<span class="icon">★</span>
-						</label>
-					</div>
-				</div>
 			</div>
 
-			<div class="rider-rated constrain">
-				<a href="address" class="back link">
-					<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
-				</a>
+			<div class="rate-rider constrain">
 				<div class="text">
-					<h4>AWESOME!</h4>
-					<p>You rated Devin 4 stars</p>
+					<h4>Rate your rider</h4>
+					<p>Your feedback will help us improve shipping experience better.</p>
 				</div>
 				<div class="rating-stars">
 					<label>
@@ -216,6 +168,36 @@
 
 		</form>
 		<!-- <div class="popup-overlay"></div> -->
+	</section>
+
+
+	<!-- This is that menu at the bottom of every page -->
+	<section id="bottom-menu">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
+				<span>Home</span>
+			</a>
+
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
+				<span>Nearby</span>
+			</a>
+
+			<a href="cart" style="padding: 15px;" class="link link-secondary active">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
+				<span>Orders</span>
+			</a>
+
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
+				<span>Profile</span>
+			</a>
+		</div>
 	</section>
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>

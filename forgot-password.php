@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="author" content="Zero30">
+    <meta name="author" content="Fudhunt">
     <meta name="description" content="Forgot Password">
     <meta name="robots" content="index, follow">
 
@@ -16,7 +16,7 @@
     <title>Forgot Password</title>
 </head>
 
-<body id="forgot-password-page" class="bg-offwhite container">
+<body id="forgot-password-page" class="bg-dark container">
 
     <section id="header" class="constrain">
         <div class="navigation">

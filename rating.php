@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Rating">
 	<meta name="robots" content="index, follow">
 
@@ -24,7 +24,7 @@
 			</a>
 		</div>
 
-		<h2>Rating</h2>
+		<h1>Rating</h2>
 	</section>
 
 	<section id="rating">

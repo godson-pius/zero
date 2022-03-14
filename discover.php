@@ -1,6 +1,6 @@
 <?php
 require_once 'admin/config/db.php';
-blockCRS($_SESSION['user'], 'login');
+// blockCRS($_SESSION['user'], 'login');
 
 ?>
 
@@ -10,7 +10,7 @@ blockCRS($_SESSION['user'], 'login');
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Discover">
 	<meta name="robots" content="index, follow">
 
@@ -49,7 +49,7 @@ blockCRS($_SESSION['user'], 'login');
 				<a href="#" class="btn close-search">
 					<!-- Whenever the search popup is open, the filter.svg icon hides and the "Exit" text shows instead just as it was done in the Figma design. It works with the .searching class on the <body> tag. -->
 
-					<img class="svg" src="assets/images/icons/filter.svg" height="15px" alt="Filter">
+					<!-- <img class="svg" src="assets/images/icons/filter.svg" height="15px" alt="Filter"> -->
 
 					<p>Exit</p>
 				</a>
@@ -158,28 +158,27 @@ blockCRS($_SESSION['user'], 'login');
 
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary active">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -212,7 +211,7 @@ blockCRS($_SESSION['user'], 'login');
 		<div class="advert">
 			<a href="#" class="details">
 				<div class="image">
-					<img src="assets/images/banner/banner1.png" height="100px" alt="Advert">
+					<img src="assets/images/banner/banner3.png" height="100px" alt="Advert">
 				</div>
 				<div class="flickity-image-support">
 					<h5>Advert</h5>
@@ -320,121 +319,132 @@ blockCRS($_SESSION['user'], 'login');
 			<!-- 
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
 			-->
-			<a href="#" class="order">
+			<div class="order bookmarked">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Fried Noodles</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="order bookmarked">
+			<div class="order">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-						<!-- Bookmark icon -->
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Peach Tea Spoon</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="order">
+			<div class="order bookmarked">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Steamed Askamaya</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="order bookmarked">
+			<div class="order">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Fried Noodles</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="order">
+			<div class="order bookmarked">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Peach Tea Spoon</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="order bookmarked">
+			<div class="order">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Steamed Askamaya</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 		</div>
 	</section>
 
 	<section id="restaurants" class="constrain">
 		<div class="section-title with-link">
 			<h4>Favourite Restaurants</h4>
-			<a href="favourites" class="link link-primary">
+			<a href="bookmark" class="link link-primary">
 				<span>View all</span>
 				<img class="svg" src="assets/images/icons/double-chevron-right.svg" height="7px" alt="Arrow Right">
 			</a>
@@ -572,118 +582,130 @@ blockCRS($_SESSION['user'], 'login');
 			<!-- 
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
 			-->
-			<a href="#" class="sale bookmarked">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Fried Noodles</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="sale">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Peach Tea Spoon</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="sale bookmarked">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Steamed Askamaya">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Steamed Askamaya</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="sale">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Fried Noodles</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="sale bookmarked">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Peach Tea Spoon">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Peach Tea Spoon</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 
-			<a href="#" class="sale bookmarked">
+			<div class="sale">
 				<div class="details">
-					<div class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Steamed Askamaya">
-						<button class="btn bookmark">
+					<a href="#" class="image">
+						<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<button type="button" class="btn bookmark">
 							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 						</button>
-					</div>
+					</a>
 					<div class="text">
-						<h5>Steamed Askamaya</h5>
+						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
 						<p>
-							<img class="svg" src="assets/images/icons/store.svg" height="10px" alt="Store">
-							<span>Seafoods & Fries</span>
+							<span class="price">$1,500</span>
+							<button type="button" class="btn add-to-cart">
+								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+							</button>
 						</p>
 					</div>
 				</div>
-			</a>
+			</div>
 		</div>
 	</section>
 
-	<section id="nearby" class="constrain">
-		<div class="section-title with-link">
+	<section id="nearby" class="">
+		<div class="section-title with-link constrain">
 			<h4>Nearby</h4>
 			<a href="nearby" class="link link-primary">
 				<span>View all</span>
@@ -694,7 +716,7 @@ blockCRS($_SESSION['user'], 'login');
 		<!-- 
 			There's a ".bookmarked" class on the restaurant that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon.
 		-->
-		<div class="business bookmarked">
+		<div class="business constrain bookmarked">
 			<div class="details h-grid">
 				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kichi.png" height="85px" alt="kichi">
@@ -739,7 +761,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -750,7 +772,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -761,7 +783,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -772,14 +794,14 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
 			</div>
 		</div>
 
-		<div class="business">
+		<div class="business constrain">
 			<div class="details h-grid">
 				<a href="business-details" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
@@ -822,7 +844,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -833,7 +855,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -844,7 +866,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>
@@ -855,7 +877,7 @@ blockCRS($_SESSION['user'], 'login');
 					<div class="text">
 						<p class="name">Tropical Fruit Juice</p>
 						<p class="price">
-							<b>₦1,500</b>
+							<b>$1,500</b>
 						</p>
 					</div>
 				</a>

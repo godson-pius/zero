@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Edit Profile">
 	<meta name="robots" content="index, follow">
 
@@ -33,7 +33,7 @@
 			<button class="add-picture btn">
 				<label for="change-dp" class="change-dp">
 					<!-- This is the image that should be replace when a user uploads a new one -->
-					<img class="svg" src="assets/images/icons/add1.svg" width="30px" alt="Add Picture">
+					<img class="svg" src="assets/images/icons/plus.svg" width="30px" alt="Add Picture">
 				</label>
 			</button>
 			<!-- This is the input that handles the image upload. It's hidden. -->
@@ -88,28 +88,27 @@
 
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary active">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>

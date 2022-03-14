@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Order Information">
 	<meta name="robots" content="index, follow">
 
@@ -20,14 +20,13 @@
 
 <body id="order-information-page" class="container">
 	<!-- Wrapping everything in a form so it can be submitted to the database. -->
-	<form action="">
 		<section id="header" class="constrain header-white">
 			<a href="edit-profile" class="back link">
 				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
 			</a>
 
 			<div class="text">
-				<h2 class="title">Order Information</h2>
+				<h1 class="title">Order Information</h1>
 
 				<p class="id">
 					<span>ID:</span> 43e2 116H
@@ -89,35 +88,23 @@
 			<div class="cart-totals constrain">
 				<div class="h-grid">
 					<p>Subtotal (1 item)</p>
-					<p>₦700.00</p>
+					<p>$700.00</p>
 				</div>
 				<div class="h-grid">
 					<p>Ship Fee (2.4 Km)</p>
-					<p>₦850.00</p>
+					<p>$850.00</p>
 				</div>
 				<div class="totals">
 					<h4>Total</h4>
-					<h4>₦1550.00</h4>
+					<h4>$1550.00</h4>
 				</div>
 			</div>
-		</section>
-
-		<section id="note">
-			<div class="title constrain">
-				<h5>Note</h5>
-			</div>
-
-			<div class="constrain">
-				<textarea name="note" placeholder="Please call me when you come. Thank you!" id="note"></textarea>
-			</div>
-			
 		</section>
 		
 		<div class="submit constrain">
 			<a href="#" class="btn btn-outline-black">Rating</a>
 			<button type="submit" class="btn btn-primary">Re-Order</button>
 		</div>
-	</form>
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

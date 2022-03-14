@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
-	<meta name="description" content="Favourites">
+	<meta name="author" content="Fudhunt">
+	<meta name="description" content="Bookmarks">
 	<meta name="robots" content="index, follow">
 
 	<!-- Stylesheets -->
@@ -13,44 +13,43 @@
 	<link rel="stylesheet" href="assets/css/styles.css" />
 	<link rel="stylesheet" href="assets/css/flickity.css">
 
-	<title>Favourites</title>
+	<title>Bookmarks</title>
 </head>
 
 <!-- 
 	I have two pages in one. They're fixed into tabs and they become active when the tab's button is clicked.
  -->
 
-<body id="favourites-page" class="container with-bottom-menu bg-offwhite">
+<body id="bookmarks-page" class="container with-bottom-menu bg-offwhite">
 	<section id="header" class="constrain header-white">
 		<div class="text">
-			<h2 class="name">Favourites</h2>
+			<h1 class="name">Bookmarks</h1>
 		</div>
 	</section>
 	
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary active">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -70,10 +69,10 @@
 	<!-- Tab content -->
 	<!-- This is the Foods tab -->
 	<section id="foods" class="tab-content category active">
-		<div class="favourites constrain">
+		<div class="bookmarks constrain">
 
 			<!-- Because this is the Favorites page, all products are bookmarked. So no work has to be done for the bookmark icon. It's already styled from the .favorite class. -->
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -95,12 +94,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -122,12 +121,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -149,12 +148,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -176,12 +175,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -203,12 +202,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -230,12 +229,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -257,12 +256,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/products/10.png" height="85px" alt="kichi">
 				</a>
@@ -284,7 +283,7 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
@@ -294,9 +293,9 @@
 	<!-- Tab content -->
 	<!-- This is the Restaurants tab -->
 	<section id="restaurants" class="tab-content category">
-		<div class="favourites constrain">
+		<div class="bookmarks constrain">
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -318,12 +317,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -345,12 +344,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -372,12 +371,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -399,12 +398,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -426,12 +425,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -453,12 +452,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -480,12 +479,12 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="favourite">
+			<div class="bookmark">
 				<a href="#" class="image">
 					<img src="assets/images/restaurants/kfc.png" height="85px" alt="kichi">
 				</a>
@@ -507,7 +506,7 @@
 							<span>(1256)</span>
 						</p>
 
-						<p class="price">₦1,500</p>
+						<p class="price">$1,500</p>
 					</div>
 				</div>
 			</div>
@@ -545,14 +544,6 @@
 			document.getElementById(tabTitle).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
-
-		$(document).ready(function () {
-
-			$('body.with-bottom-menu').css({
-				'padding-bottom': $('#bottom-menu').height() + "px"
-
-			});
-		});
 	</script>
 </body>
 

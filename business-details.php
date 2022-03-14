@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Business Details">
 	<meta name="robots" content="index, follow">
 
@@ -47,7 +47,7 @@
 
 		<!-- This shows the name and address of the restaurant -->
 		<div class="text">
-			<h2 class="name">Kichi Coffee & Drink</h2>
+			<h1 class="name">Kichi Coffee & Drink</h1>
 			<p class="address">
 				<img class="svg" src="assets/images/icons/map-pointer.svg" height="10px" alt="Store">
 				<span>76A Gwarimpa Estate, Abuja</span>
@@ -62,28 +62,27 @@
 
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary active">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -96,7 +95,7 @@
 		I have already implemented it using javascript.
 	-->
 	<section id="tabs" class="constrain">
-		<button class="tab active" onclick="openTab(event, 'products')"><span>Products</span></button>
+		<button class="tab active" onclick="openTab(event, 'products')"><span>Menu</span></button>
 		<button class="tab" onclick="openTab(event, 'reviews')"><span>Reviews</span></button>
 		<button class="tab" onclick="openTab(event, 'information')"><span>Information</span></button>
 	</section>
@@ -104,159 +103,161 @@
 	<!-- Tab content -->
 	<!-- This is the Products tab -->
 	<section id="products" class="tab-content active">
-		<div class="section-title with-link constrain">
-			<h4>Popular Items</h4>
-			<a href="#" class="link link-primary">
-				<span>View all</span>
-				<img class="svg" src="assets/images/icons/double-chevron-right.svg" height="7px" alt="Arrow Right">
-			</a>
-		</div>
-
-		<!-- This is a flickity slider of products by this restaurant -->
-		<div class="products constrain"
-			data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "0", "LazyLoad": false }'>
-
-			<!-- 
-				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
-			-->
-			<div class="product bookmarked">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-
-							<!-- Clicking the button below brings up the Add to Cart popup. -->
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-							</button>
-						</p>
-					</div>
-				</div>
+		<div class="v-grid">
+			<div class="section-title with-link constrain">
+				<h4>Popular Items</h4>
+				<a href="#" class="link link-primary">
+					<span>View all</span>
+					<img class="svg" src="assets/images/icons/double-chevron-right.svg" height="7px" alt="Arrow Right">
+				</a>
 			</div>
 
-			<div class="product">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+			<!-- This is a flickity slider of products by this restaurant -->
+			<div class="products constrain"
+				data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": false, "autoPlay": "10000", "pauseAutoPlayOnHover": true, "dragThreshold": "0", "LazyLoad": false }'>
+
+				<!-- 
+					There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon on top of the product image.
+				-->
+				<div class="product bookmarked">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+
+								<!-- Clicking the button below brings up the Add to Cart popup. -->
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="product bookmarked">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+				<div class="product">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/2.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="product bookmarked">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+				<div class="product bookmarked">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/3.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="product">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+				<div class="product bookmarked">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="product">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+				<div class="product">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/5.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="product bookmarked">
-				<div class="details">
-					<a href="#" class="image">
-						<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
-						<button class="btn bookmark">
-							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-						</button>
-					</a>
-					<div class="text">
-						<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
-						<p>
-							<span class="price">₦1,500</span>
-							<button class="btn add-to-cart">
-								<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+				<div class="product">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/6.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
 							</button>
-						</p>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="product bookmarked">
+					<div class="details">
+						<a href="#" class="image">
+							<img src="assets/images/products/1.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+							<button class="btn bookmark">
+								<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+							</button>
+						</a>
+						<div class="text">
+							<a href="#" class="name">Fried Noodles Salad and Chicken Wings</a>
+							<p>
+								<span class="price">$1,500</span>
+								<button class="btn add-to-cart">
+									<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+								</button>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -264,314 +265,119 @@
 
 		<div id="product-categories">
 			<div class="section-title constrain">
-				<h5>Juice <span>2 items</span></h5>
+				<h4>Juice <span>2 items</span></h4>
 			</div>
 
 			<!-- 
 				There's a ".bookmarked" class on the products that are bookmarked by the user, Once the .bookmarked tag is added as a class it styles the bookmark icon.
 			-->
-			<div class="product constrain">
-				<a href="#" class="image">
-					<img src="assets/images/products/3.png" height="120px" alt="Lemon Juice Fresh">
-				</a>
-
-				<div class="details">
-
-					<a href="#" class="name">
-						<h5>Lemon Juice Fresh</h5>
+			<div class="v-grid">
+				<div class="product constrain">
+					<a href="#" class="image">
+						<img src="assets/images/products/3.png" height="120px" alt="Lemon Juice Fresh">
 					</a>
 
-					<button class="btn bookmark">
-						<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-					</button>
+					<div class="details">
 
-					<p class="description">Lemon Juice Fresh is valuable to stock for cooking, cleaning.</p>
+						<a href="#" class="name">
+							<h5>Lemon Juice Fresh</h5>
+						</a>
 
-					<h5 class="price">₦1,300</h5>
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 
-					<p class="bag">
-						<img class="svg icon" alt="" src="assets/images/icons/bag.svg">
-						<span>99+</span>
-					</p>
+						<h5 class="price">$1,300</h5>
 
-					<span class="line"></span>
+						<button class="btn add-to-cart">
+							<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+						</button>
 
-					<p class="like">
-						<img class="svg icon" alt="" src="assets/images/icons/like.svg">
-						<span>26</span>
-					</p>
-
-					<button class="btn add-to-cart">
-						<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-					</button>
-
+					</div>
 				</div>
-			</div>
 
-			<div class="product constrain bookmarked">
-				<a href="#" class="image">
-					<img src="assets/images/products/4.png" height="120px" alt="Lemon Juice Fresh">
-				</a>
-
-				<div class="details">
-
-					<a href="#" class="name">
-						<h5>Lemon Juice Fresh</h5>
+				<div class="product constrain bookmarked">
+					<a href="#" class="image">
+						<img src="assets/images/products/4.png" height="120px" alt="Lemon Juice Fresh">
 					</a>
 
-					<button class="btn bookmark">
-						<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-					</button>
+					<div class="details">
 
-					<p class="description">Lemon Juice Fresh is valuable to stock for cooking, cleaning.</p>
+						<a href="#" class="name">
+							<h5>Lemon Juice Fresh</h5>
+						</a>
 
-					<h5 class="price">₦1,300</h5>
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 
-					<p class="bag">
-						<img class="svg icon" alt="" src="assets/images/icons/bag.svg">
-						<span>99+</span>
-					</p>
+						<h5 class="price">$1,300</h5>
 
-					<span class="line"></span>
+						<button class="btn add-to-cart">
+							<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+						</button>
 
-					<p class="like">
-						<img class="svg icon" alt="" src="assets/images/icons/like.svg">
-						<span>26</span>
-					</p>
-
-					<button class="btn add-to-cart">
-						<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-					</button>
-
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div id="product-categories">
 			<div class="section-title constrain">
-				<h5>Cofee <span>2 items</span></h5>
+				<h4>Cofee <span>2 items</span></h4>
 			</div>
 
-			<div class="product constrain bookmarked">
-				<a href="#" class="image">
-					<img src="assets/images/products/9.png" height="120px" alt="Black Sugar Coffee">
-				</a>
-
-				<div class="details">
-
-					<a href="#" class="name">
-						<h5>Black Sugar Coffee</h5>
-					</a>
-
-					<button class="btn bookmark">
-						<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-					</button>
-
-					<p class="description">Black Sugar Coffee is valuable to stock for cooking, cleaning.</p>
-
-					<h5 class="price">₦350</h5>
-
-					<p class="bag">
-						<img class="svg icon" alt="" src="assets/images/icons/bag.svg">
-						<span>99+</span>
-					</p>
-
-					<span class="line"></span>
-
-					<p class="like">
-						<img class="svg icon" alt="" src="assets/images/icons/like.svg">
-						<span>26</span>
-					</p>
-
-					<button class="btn add-to-cart">
-						<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-					</button>
-
-				</div>
-			</div>
-
-			<div class="product constrain">
-				<a href="#" class="image">
-					<img src="assets/images/products/8.png" height="120px" alt="Black Sugar Coffee">
-				</a>
-
-				<div class="details">
-
-					<a href="#" class="name">
-						<h5>Black Sugar Coffee</h5>
-					</a>
-
-					<button class="btn bookmark">
-						<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
-					</button>
-
-					<p class="description">Black Sugar Coffee is valuable to stock for cooking, cleaning.</p>
-
-					<h5 class="price">₦450</h5>
-
-					<p class="bag">
-						<img class="svg icon" alt="" src="assets/images/icons/bag.svg">
-						<span>99+</span>
-					</p>
-
-					<span class="line"></span>
-
-					<p class="like">
-						<img class="svg icon" alt="" src="assets/images/icons/like.svg">
-						<span>26</span>
-					</p>
-
-					<button class="btn add-to-cart">
-						<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
-					</button>
-
-				</div>
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- 
-		This is the popup that comes up when you click the add to cart button (the plus icon beside every product)
-	-->
-	<section id="addtocart-popup" class="popup">
-		
-		<div class="popup-content">
-
-			<!-- This button closes the popup, it has been implemented. -->
-			<button type="button" class="close-popup">
-				<img class="svg" src="assets/images/icons/close-popup.svg" height="10px" alt="Close Popup">
-			</button>
-
-			<h5 class="title constrain">Add New Item</h5>
-
-			<form action="">
-			
-				<div class="product-details constrain">
-
+			<div class="v-grid">
+				<div class="product constrain bookmarked">
 					<a href="#" class="image">
-						<img src="assets/images/products/4.png" height="120px" alt="Fried Noodles Salad and Chicken Wings">
+						<img src="assets/images/products/9.png" height="120px" alt="Black Sugar Coffee">
 					</a>
 
 					<div class="details">
 
-						<a href="#" class="name">Lemon Juice Fresh</a>
+						<a href="#" class="name">
+							<h5>Black Sugar Coffee</h5>
+						</a>
 
-						<p class="bag">
-							<img class="svg icon" alt="" src="assets/images/icons/bag.svg">
-							<span>99+</span>
-						</p>
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
 
-						<span class="line"></span>
+						<h5 class="price">$350</h5>
 
-						<p class="like">
-							<img class="svg icon" alt="" src="assets/images/icons/like.svg">
-							<span>26</span>
-						</p>
-
-						<h5 class="price">₦450</h5>
-
-						<!-- 
-							This plus and minus works
-						-->
-						<div class="quantity">
-							<button type="button" class="minus btn"><img class="svg icon" alt="" src="assets/images/icons/minus.svg" height="30px"></button>
-							<span class="value">0</span>
-							<button type="button" class="plus btn"><img class="svg icon" alt="" src="assets/images/icons/plus.svg" height="30px"></button>
-						</div>
+						<button class="btn add-to-cart">
+							<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+						</button>
 
 					</div>
 				</div>
 
-				<div class="attribute-title">
-					<div class="h-grid constrain">
-						<p>Size</p>
-						<p>Price</p>
+				<div class="product constrain">
+					<a href="#" class="image">
+						<img src="assets/images/products/8.png" height="120px" alt="Black Sugar Coffee">
+					</a>
+
+					<div class="details">
+
+						<a href="#" class="name">
+							<h5>Black Sugar Coffee</h5>
+						</a>
+
+						<button class="btn bookmark">
+							<img class="svg" src="assets/images/icons/bookmark.svg" height="18px" alt="Bookmark">
+						</button>
+
+						<h5 class="price">$450</h5>
+
+						<button class="btn add-to-cart">
+							<img class="svg" src="assets/images/icons/add.svg" height="18px" alt="Add to Cart">
+						</button>
+
 					</div>
 				</div>
-
-				<div class="attributes constrain">
-					<div class="h-grid">
-						<div class="checkbox">
-							<input id="size-s" type="checkbox">
-							<span class="check"></span>
-							<label for="size-s">Size S <span>(500 ml)</span></label>
-						</div>
-
-						<p class="price">₦0</p>
-					</div>
-
-					<div class="h-grid">
-						<div class="checkbox">
-							<input id="size-m" type="checkbox">
-							<span class="check"></span>
-							<label for="size-m">Size M <span>(750 ml)</span></label>
-						</div>
-
-						<p class="price">₦50</p>
-					</div>
-
-					<div class="h-grid">
-						<div class="checkbox">
-							<input id="size-l" type="checkbox">
-							<span class="check"></span>
-							<label for="size-l">Size L <span>(1100 ml)</span></label>
-						</div>
-
-						<p class="price">₦130</p>
-					</div>
-
-				</div>
-
-				<div class="attribute-title">
-					<div class="h-grid constrain">
-						<p>Size</p>
-					</div>
-				</div>
-
-				<div class="attributes constrain">
-					<div class="h-grid">
-						<div class="checkbox">
-							<input id="lemon" type="checkbox">
-							<span class="check"></span>
-							<label for="lemon">Add Lemon</label>
-						</div>
-					</div>
-
-					<div class="h-grid">
-						<div class="checkbox">
-							<input id="ice" type="checkbox">
-							<span class="check"></span>
-							<label for="ice">Add Ice</label>
-						</div>
-					</div>
-				</div>
-
-				<div class="note">
-					<div class="title">
-						<div class="h-grid constrain">
-							<p>Note</p>
-						</div>
-					</div>
-
-					<div class="constrain">
-						<textarea name="note" placeholder="Leave a note" id="note"></textarea>
-					</div>
-				</div>
-
-				<div class="constrain">
-					<!-- This button submits this form. -->
-					<button type="submit" class="big-cart-btn btn btn-primary">
-						<p class="items">1 item</p>
-						<p class="price">₦4,150</p>
-						<p class="text">Add to Cart</p>
-					</button>
-				</div>
-
-			</form>
+			</div>
 		</div>
-		<!-- <div class="popup-overlay"></div> -->
+
 	</section>
 
 	<!-- Tab content -->
@@ -728,21 +534,35 @@
 	</section>
 	
 	<!-- Tab content -->
-	<section id="information" class="tab-content">
-		<div class="v-grid constrain">
+	<section id="information" class="tab-content constrain">
+		<!-- <div class="v-grid constrain">
 			<h5 class="title">Informations</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quos, unde molestias laudantium harum
 				recusandae asperiores id temporibus sunt earum ipsum cupiditate hic, dolore tempore amet eveniet sit vel
 				nam!</p>
-		</div>
+		</div> -->
 
-		<div class="v-grid constrain">
-			<h5 class="title">Address</h5>
+		<div class="v-grid">
+			<h4 class="title">Location</h4>
 			<!-- The image in this map div should be replced with an actual map.  -->
 			<div class="map">
-				<img src="assets/images/others/map-address.png" height="200px" alt="Map">
+				<!-- <img src="assets/images/others/map-address.png" height="200px" alt="Map"> -->
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=138%20Church%20St%20San%20Francisco,%20CA%2094114&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">google custom map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
 			</div>
 		</div>
+
+		<div class="v-grid">
+			<h4 class="title">Hours</h4>
+			<p>Mon: Closed</p>
+			<p>Tue: 11:00 AM - 8:30 PM</p>
+			<p>Wed: 11:00 AM - 8:30 PM</p>
+			<p>Thu: 11:00 AM - 8:30 PM</p>
+			<p>Fri: 11:00 AM - 9:00 PM</p>
+			<p>Sat: 11:00 AM - 9:00 PM</p>
+			<p>Sun: 11:00 AM - 8:30 PM</p>
+		</div>
+
+		
 	</section>
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>

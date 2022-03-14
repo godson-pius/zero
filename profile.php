@@ -1,6 +1,6 @@
 <?php
 require_once 'admin/config/db.php';
-blockCRS($_SESSION['user'], 'login');
+// blockCRS($_SESSION['user'], 'login');
 $user_id = $_SESSION['user'];
 
 $user_profile = getWhere('users', 'user_id', $user_id);
@@ -18,7 +18,7 @@ if (isset($user_profile)) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Profile">
 	<meta name="robots" content="index, follow">
 
@@ -33,7 +33,7 @@ if (isset($user_profile)) {
 <body id="profile-page" class="container with-bottom-menu bg-offwhite">
 	<section id="header" class="constrain header-white">
 		<div class="text">
-			<h2 class="name">Profile</h2>
+			<h1 class="name">Profile</h1>
 		</div>
 
 		<a href="edit-profile" class="user-details">
@@ -53,28 +53,27 @@ if (isset($user_profile)) {
 	</section>
 
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary active">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -84,25 +83,25 @@ if (isset($user_profile)) {
 	<section id="settings">
 		<div class="setting-group constrain">
 			<a href="payment-methods" class="setting">
-				<span class="icon"><img class="svg" src="assets/images/icons/profile/payment.svg" width="16px"></span>
+				<span class="icon"><img class="svg" src="assets/images/icons/profile/payment.svg" width="20px" height="20px"></span>
 				<p class="name">Payment Methods</p>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
 
 			<a href="address" class="setting">
-				<span class="icon"><img class="svg" src="assets/images/icons/profile/address.svg" width="16px"></span>
+				<span class="icon"><img class="svg" src="assets/images/icons/profile/address.svg" width="20px" height="20px"></span>
 				<p class="name">Address</p>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
 
-			<a href="#" class="setting">
-				<span class="icon"><img class="svg" src="assets/images/icons/profile/vouchers.svg" width="16px"></span>
-				<p class="name">My Vouchers</p>
+			<a href="bookmarks" class="setting">
+				<span class="icon"><img class="svg" src="assets/images/icons/profile/bookmark.svg" width="20px" height="20px"></span>
+				<p class="name">Bookmarks</p>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
 		</div>
 
-		<div class="setting-group constrain">
+		<!-- <div class="setting-group constrain">
 			<a href="#" class="setting">
 				<span class="icon"><img class="svg" src="assets/images/icons/profile/notifications.svg" width="16px"></span>
 				<p class="name">Notifications</p>
@@ -132,7 +131,7 @@ if (isset($user_profile)) {
 				<p class="name">Support</p>
 				<span class="chevron-icon"><img class="svg" src="assets/images/icons/chevron-right.svg" height="20px"></span>
 			</a>
-		</div>
+		</div> -->
 
 		<div class="setting-group constrain">
 			<a href="logout" class="setting">

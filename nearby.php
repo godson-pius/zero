@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Nearby">
 	<meta name="robots" content="index, follow">
 
@@ -23,7 +23,7 @@
 <body id="nearby-page" class="container with-bottom-menu bg-offwhite">
 	<section id="header" class="constrain header-white">
 		<div class="text">
-			<h2 class="name">Nearby</h2>
+			<h1 class="name">Nearby</h1>
 		</div>
 		<!-- This select is used to change the location of the user so he sees Nearby Restaurants. -->
 		<div class="select">
@@ -42,28 +42,27 @@
 
 	<!-- This is that menu at the bottom of every page -->
 	<section id="bottom-menu">
-		<div class="menu-links">
-			<a href="discover" class="link link-secondary">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
 				<span>Home</span>
 			</a>
 
-			<a href="nearby" class="link link-secondary active">
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary active">
 				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
 				<span>Nearby</span>
 			</a>
 
-			<a href="orders" class="link link-secondary">
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
 				<span>Orders</span>
 			</a>
 
-			<a href="favourites" class="link link-secondary">
-				<img class="svg" src="assets/images/icons/menu/favourites.svg" height="20px" alt="Favourites">
-				<span>Favourites</span>
-			</a>
-
-			<a href="profile" class="link link-secondary">
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary">
 				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
 				<span>Profile</span>
 			</a>
@@ -1506,14 +1505,6 @@
 			document.getElementById(tabTitle).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
-
-		$(document).ready(function () {
-
-			$('body.with-bottom-menu').css({
-				'padding-bottom': $('#bottom-menu').height() + "px"
-
-			});
-		});
 	</script>
 </body>
 

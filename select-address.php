@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta name="author" content="Zero30">
+	<meta name="author" content="Fudhunt">
 	<meta name="description" content="Delivery Location">
 	<meta name="robots" content="index, follow">
 
@@ -16,36 +16,60 @@
 	<title>Delivery Location</title>
 </head>
 
-<body id="delivery-location-page" class="container bg-offwhite">
-	<section id="header" class="header-white">
-		<div class="header-actions constrain">
-			<a href="address" class="back link">
-				<img class="svg" src="assets/images/icons/arrow-left.svg" width="18px" alt="Go back">
-			</a>
-
-			<h4>Delivery Location</h4>
+<body id="delivery-location-page" class="container bg-offwhite with-bottom-menu">
+	<section id="header" class="constrain header-white">
+		<div class="navigation">
+            <a href="address" class="back">
+                <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
+            </a>
+        </div>	
+		<div class="text">
+			<h1 class="name">Delivery Location</h1>
 		</div>
 	</section>
 
-	<!-- The image in this map div should be replced with an actual map.  -->
-	<section id="map" class="constrain">
-		<img src="assets/images/others/pointer-on-map.png" height="100px" alt="Restaurant Image">
-	</section>
+	<section id="add-address" class="constrain">
+		<div class="content">
+			<h5 class="title">Type your Address</h5>
 
-	<section id="add-address-popup" class="popup active">
-		<button type="button" class="close-popup">
-			<img class="svg" src="assets/images/icons/close-popup.svg" height="8px" alt="Close Popup">
-		</button>
-		<div class="popup-content">
-			<h5 class="title constrain">Type your Address</h5>
-
-			<form action="" class="constrain">
+			<form action="" class="">
 				<input name="address-search" placeholder="Search your address" value="330 15th Eighth Avenue, New York" type="text" />
 
 				<button type="submit" class="btn btn-primary" name="add-address">Add new address</button>
 			</form>
 		</div>
 		<!-- <div class="popup-overlay"></div> -->
+	</section>
+
+
+
+	<!-- This is that menu at the bottom of every page -->
+	<section id="bottom-menu">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
+				<span>Home</span>
+			</a>
+
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
+				<span>Nearby</span>
+			</a>
+
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
+				<span>Orders</span>
+			</a>
+
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary active">
+				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
+				<span>Profile</span>
+			</a>
+		</div>
 	</section>
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>

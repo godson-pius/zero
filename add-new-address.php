@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="author" content="Zero30">
+    <meta name="author" content="Fudhunt">
     <meta name="description" content="Add New Address">
     <meta name="robots" content="index, follow">
 
@@ -17,11 +17,11 @@
 </head>
 
 
-<body class="bg-offwhite container">
+<body class="bg-offwhite container with-bottom-menu">
 
     <section id="header" class="constrain">
         <div class="navigation">
-            <a href="#" class="back">
+            <a href="address" class="back">
                 <img class="svg" src="assets/images/icons/arrow-left.svg" height="5px" alt="Go back">
             </a>
         </div>
@@ -86,6 +86,35 @@
             </div>
         </form>
     </section>
+
+    <!-- This is that menu at the bottom of every page -->
+	<section id="bottom-menu">
+		<div class="menu-links constrain">
+			<a href="discover" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/home.svg" height="20px" alt="Home">
+				<span>Home</span>
+			</a>
+
+			<a href="nearby" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/nearby.svg" height="20px" alt="Nearby">
+				<span>Nearby</span>
+			</a>
+
+			<a href="cart" style="padding: 15px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/cart.svg" height="20px" width="20px" alt="Cart">
+			</a>
+
+			<a href="orders" style="padding: 20px 10px;" class="link link-secondary">
+				<img class="svg" src="assets/images/icons/menu/orders.svg" height="20px" alt="Orders">
+				<span>Orders</span>
+			</a>
+
+			<a href="profile" style="padding: 20px 10px;" class="link link-secondary active">
+				<img class="svg" src="assets/images/icons/menu/profile.svg" height="20px" alt="Profile">
+				<span>Profile</span>
+			</a>
+		</div>
+	</section>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

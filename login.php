@@ -23,7 +23,7 @@ if (isset($_POST['signin'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="author" content="Zero30">
+    <meta name="author" content="Fudhunt">
     <meta name="description" content="Login">
     <meta name="robots" content="index, follow">
 
@@ -35,10 +35,10 @@ if (isset($_POST['signin'])) {
     <title>Login</title>
 </head>
 
-<body id="login-page" class="bg-offwhite container">
+<body id="login-page" class="bg-dark container">
 
     <section id="login-logo" class="constrain">
-        <img class="svg" src="assets/images/logo.png" height="150px" alt="Zero30 Logo">
+        <img class="svg" src="assets/images/logo.svg" height="150px" alt="Fudhunt Logo">
     </section>
 
     <section id="login-form" class="constrain">
@@ -66,13 +66,13 @@ if (isset($_POST['signin'])) {
             <div></div>
 
             <div class="form-row">
-                <button type="submit" class="btn btn-primary" name="signin">Sign In</button>
+                <button type="submit" class="btn btn-secondary" name="signin">Sign In</button>
             </div>
 
-            <!-- Facebook sign in button -->
+            <!-- Facebook sign in button
             <div class="form-row">
                 <a href="#" class="btn btn-facebook">Sign In with Facebook</a>
-            </div>
+            </div> -->
         </form>
     </section>
 
